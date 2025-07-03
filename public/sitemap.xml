@@ -2,147 +2,147 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ljhanson.githib.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/</loc>
+    <loc>http://localhost:1313/pages/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/kubernetes/</loc>
+    <loc>http://localhost:1313/tags/kubernetes/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/kured-restart-daemon/</loc>
+    <loc>http://localhost:1313/pages/kured-restart-daemon/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/nikola-setup-notes/</loc>
+    <loc>http://localhost:1313/pages/nikola-setup-notes/</loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/cert-manager/</loc>
+    <loc>http://localhost:1313/pages/cert-manager/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/ssl/</loc>
+    <loc>http://localhost:1313/tags/ssl/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/ubuntu/</loc>
+    <loc>http://localhost:1313/tags/ubuntu/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/ubuntu-unattended-upgradws/</loc>
+    <loc>http://localhost:1313/pages/ubuntu-unattended-upgradws/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/install/</loc>
+    <loc>http://localhost:1313/tags/install/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/pi/</loc>
+    <loc>http://localhost:1313/tags/pi/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/pi_install_-notes/</loc>
+    <loc>http://localhost:1313/pages/pi_install_-notes/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/pihole/</loc>
+    <loc>http://localhost:1313/tags/pihole/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/vpn/</loc>
+    <loc>http://localhost:1313/tags/vpn/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/splunk-notes/</loc>
+    <loc>http://localhost:1313/pages/splunk-notes/</loc>
     <lastmod>2019-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/aws-security-notes/</loc>
+    <loc>http://localhost:1313/pages/aws-security-notes/</loc>
     <lastmod>2019-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/docker-reference/</loc>
+    <loc>http://localhost:1313/pages/docker-reference/</loc>
     <lastmod>2019-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/arm/</loc>
+    <loc>http://localhost:1313/tags/arm/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/arm-sbc-notes/</loc>
+    <loc>http://localhost:1313/pages/arm-sbc-notes/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/fedora/</loc>
+    <loc>http://localhost:1313/tags/fedora/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/your-kubernetes-control-plane-has-initialized-successfully/</loc>
+    <loc>http://localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/notes/</loc>
+    <loc>http://localhost:1313/tags/notes/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/sbc/</loc>
+    <loc>http://localhost:1313/tags/sbc/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/idrac/</loc>
+    <loc>http://localhost:1313/tags/idrac/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/idrac-notes/</loc>
+    <loc>http://localhost:1313/pages/idrac-notes/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/freebsd/</loc>
+    <loc>http://localhost:1313/tags/freebsd/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/gitea-in-a-jail/</loc>
+    <loc>http://localhost:1313/pages/gitea-in-a-jail/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/jails/</loc>
+    <loc>http://localhost:1313/tags/jails/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/bash/</loc>
+    <loc>http://localhost:1313/tags/bash/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/bash-venv-functions/</loc>
+    <loc>http://localhost:1313/pages/bash-venv-functions/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/venv/</loc>
+    <loc>http://localhost:1313/tags/venv/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/freebsd-12-notes-for-optiplex-755/</loc>
+    <loc>http://localhost:1313/pages/freebsd-12-notes-for-optiplex-755/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/powerline-fonts-in-chromeos-ssh-client/</loc>
+    <loc>http://localhost:1313/pages/powerline-fonts-in-chromeos-ssh-client/</loc>
     <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/powerline-from-ports-on-freebsd/</loc>
+    <loc>http://localhost:1313/pages/powerline-from-ports-on-freebsd/</loc>
     <lastmod>2017-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/tmux/</loc>
+    <loc>http://localhost:1313/tags/tmux/</loc>
     <lastmod>2017-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/jupyter/</loc>
+    <loc>http://localhost:1313/tags/jupyter/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/nginx/</loc>
+    <loc>http://localhost:1313/tags/nginx/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/regular-expression-tester/</loc>
+    <loc>http://localhost:1313/pages/regular-expression-tester/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</loc>
+    <loc>http://localhost:1313/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/jupyter-notebooks-in-a-subdir-with-nginx/</loc>
+    <loc>http://localhost:1313/pages/jupyter-notebooks-in-a-subdir-with-nginx/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/tags/pip/</loc>
+    <loc>http://localhost:1313/tags/pip/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/pages/no-place-like-home/</loc>
+    <loc>http://localhost:1313/pages/no-place-like-home/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ljhanson.githib.io/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>

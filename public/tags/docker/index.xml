@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on </title>
-    <link>https://ljhanson.githib.io/tags/docker/</link>
+    <link>http://localhost:1313/tags/docker/</link>
     <description>Recent content in Docker on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ljhanson.githib.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cert Manager for Kubernetes</title>
-      <link>https://ljhanson.githib.io/pages/cert-manager/</link>
+      <link>http://localhost:1313/pages/cert-manager/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://ljhanson.githib.io/pages/cert-manager/</guid>
+      <guid>http://localhost:1313/pages/cert-manager/</guid>
       <description>Overall installtion instructions are here. Cert Manager was installed by Helm v3, with the custom resource definitions (CRD).&#xA;ClusterIssuer.yaml file sets up the connection to the CA (Let&amp;rsquo;s Encrypt) in order to generate certs. - Requires an IAM policy for Route53 and DNS challenges - yaml file must be updated with approriate values (at a minimum role, possibly accessKey and secret)</description>
     </item>
     <item>
       <title>ARM SBC Notes</title>
-      <link>https://ljhanson.githib.io/pages/arm-sbc-notes/</link>
+      <link>http://localhost:1313/pages/arm-sbc-notes/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://ljhanson.githib.io/pages/arm-sbc-notes/</guid>
+      <guid>http://localhost:1313/pages/arm-sbc-notes/</guid>
       <description># Serial Console screen /dev/ttyUSB0 115200 # Installing Fedora Images on host sudo dnf -y install arm-image-installer # Writing Image File Usage: arm-image-installer &amp;lt;options&amp;gt; --addconsole - Add system console to extlinux.conf --addkey= - /path/to/ssh-public-key --image=IMAGE - xz compressed image file name --media=DEVICE - media device file (/dev/[sdX|mmcblkX]) --norootpass - Remove the root password --resizefs - Resize root filesystem to fill media device --supported - List of supported hardware --target=TARGET - target board --version - Display version and exit -y - Assumes yes, will not wait for confirmation Example: arm-image-installer --image=Fedora-Rawhide.</description>
     </item>
     <item>
       <title>Kubernetes Notes</title>
-      <link>https://ljhanson.githib.io/pages/your-kubernetes-control-plane-has-initialized-successfully/</link>
+      <link>http://localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://ljhanson.githib.io/pages/your-kubernetes-control-plane-has-initialized-successfully/</guid>
+      <guid>http://localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</guid>
       <description>Your Kubernetes control-plane has initialized successfully!&#xA;* Kubeadm init to start the cluster off. Success:&#xA;To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &amp;#34;kubectl apply -f [podnetwork].yaml&amp;#34; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/ Then you can join any number of worker nodes by running the following on each as root: kubeadm join 192.</description>
     </item>
   </channel>

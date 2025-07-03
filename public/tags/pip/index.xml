@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pip on </title>
-    <link>https://ljhanson.githib.io/tags/pip/</link>
+    <link>http://localhost:1313/tags/pip/</link>
     <description>Recent content in Pip on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Dec 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ljhanson.githib.io/tags/pip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/pip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ensuring you have pip for Python 3 on FreeBSD</title>
-      <link>https://ljhanson.githib.io/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</link>
+      <link>http://localhost:1313/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>https://ljhanson.githib.io/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</guid>
+      <guid>http://localhost:1313/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</guid>
       <description>By default pip doesn&amp;rsquo;t get installed with the python35 port. To fix this as root execute the following:&#xA;python3 -m ensurepip </description>
     </item>
   </channel>
