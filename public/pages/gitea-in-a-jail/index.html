@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.123.7">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gitea in a FreeBSD jail &middot; ljhanson.github.io</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>ljhanson.github.io</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2025. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Gitea in a FreeBSD jail</h1>
+  <time datetime=2019-05-27T00:00:00Z class="post-date">Mon, May 27, 2019</time>
+  <p>I run a server at home, primarily for file shares but backups as well.  One thing that I felt might be easier is running git on the server to better integrate into my workflow as well as working better than git on a shared drive.</p>
+<p>To install gitea on my FreeBSD server I took the following steps:</p>
+<ul>
+<li>Create a new jail</li>
+<li>Install gitea and enable it:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@git:~ <span style="color:#75715e">#pkg install gitea bash</span>
+</span></span><span style="display:flex;"><span>root@git:~ <span style="color:#75715e">#sysrc gitea_enable=YES</span>
+</span></span></code></pre></div><p>Bash was needed as it wasn&rsquo;t a requirement of gitea but was needed later during the install, this may be fixed when you do this next time.</p>
+<ul>
+<li>Configure gitea</li>
+</ul>
+<p>You can either do this by editing the app.ini directly or deleting the app.ini file and temporarily opening up permissions for gitea to create/edit the file itself. If you chose to have the app do by itself, start the app up as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@git:~ <span style="color:#75715e">#service gitea start</span>
+</span></span></code></pre></div><p>Gitea should now be accessible at <a href="http://localhost:3000">http://localhost:3000</a>.  If the box is remote you may need to combine both these approaches to configure.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

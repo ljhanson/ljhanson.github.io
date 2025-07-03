@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.123.7">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Docker Commands Reference &middot; ljhanson.github.io</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>ljhanson.github.io</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2025. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Docker Commands Reference</h1>
+  <time datetime=2019-10-08T00:00:00Z class="post-date">Tue, Oct 8, 2019</time>
+  <table>
+<thead>
+<tr>
+<th style="text-align:center">Command</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">start</td>
+<td style="text-align:center">Start Container</td>
+</tr>
+<tr>
+<td style="text-align:center">stop</td>
+<td style="text-align:center">Stops Container</td>
+</tr>
+<tr>
+<td style="text-align:center">restart</td>
+<td style="text-align:center">Restart Container</td>
+</tr>
+<tr>
+<td style="text-align:center">kill</td>
+<td style="text-align:center">Kill Container</td>
+</tr>
+<tr>
+<td style="text-align:center">attach</td>
+<td style="text-align:center">Attach terminal to running container</td>
+</tr>
+<tr>
+<td style="text-align:center">exec</td>
+<td style="text-align:center">Excutes command within a running container</td>
+</tr>
+<tr>
+<td style="text-align:center">inspect</td>
+<td style="text-align:center">Detail output about running container in JSON</td>
+</tr>
+<tr>
+<td style="text-align:center">history</td>
+<td style="text-align:center">Shows history of container image</td>
+</tr>
+</tbody>
+</table>
+<p>Dockerfile Commands</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Command</th>
+<th style="text-align:center">Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">FROM</td>
+<td style="text-align:center">Base image, usually first</td>
+</tr>
+<tr>
+<td style="text-align:center">WORKDIR</td>
+<td style="text-align:center">Set&rsquo;s working directory</td>
+</tr>
+<tr>
+<td style="text-align:center">ADD</td>
+<td style="text-align:center">Adds file from source to destination.  Can be URL, Will Unzip</td>
+</tr>
+<tr>
+<td style="text-align:center">COPY</td>
+<td style="text-align:center">Copy from host machine.  Best practice to use unless you need ADD&rsquo;s functionality.</td>
+</tr>
+<tr>
+<td style="text-align:center">EXPOSE</td>
+<td style="text-align:center">Expose a port from container at runtime</td>
+</tr>
+<tr>
+<td style="text-align:center">VOLUME</td>
+<td style="text-align:center">Creates a mount point for container</td>
+</tr>
+<tr>
+<td style="text-align:center">RUN</td>
+<td style="text-align:center">Executes command in a new layer and commits to image.  Can have many.</td>
+</tr>
+<tr>
+<td style="text-align:center">CMD</td>
+<td style="text-align:center">Provides default behavior for launching an instance.  Only one per image and not hole image is being built.</td>
+</tr>
+<tr>
+<td style="text-align:center">ENV</td>
+<td style="text-align:center">Sets and environment variable that is available through build and during container run.</td>
+</tr>
+<tr>
+<td style="text-align:center">ARG</td>
+<td style="text-align:center">Variables that can be passes into the build command.  Don&rsquo;t use for sensitive info.</td>
+</tr>
+<tr>
+<td style="text-align:center">LABEL</td>
+<td style="text-align:center">Key-Value parr&rsquo;s exposed as image metadata</td>
+</tr>
+</tbody>
+</table>
+<p>Dockerfile Best Practices</p>
+<ul>
+<li>Keep image small</li>
+<li>As few layers as possible</li>
+<li>Avoid breaking cache</li>
+<li>Avoid known vulnerabilities</li>
+</ul>
+<p>Keeping Image Small</p>
+<ul>
+<li>Use small or slim base image</li>
+<li>Combine layers</li>
+<li>Use .dockerignore</li>
+<li>Use multistage build
+<ul>
+<li>Best for compiled code or have lot of intermediate steps</li>
+<li>Keep final stage as small as possible</li>
+<li>All other stages are discarded</li>
+</ul>
+</li>
+<li>Change user to non-root user
+<ul>
+<li>Better security</li>
+<li>Adds additional layer</li>
+</ul>
+</li>
+</ul>
+<p>HEALTHCHECK command</p>
+<ul>
+<li>Tells Docker how to check status of container</li>
+<li>HEALTHCHECK &ndash;interval=30s CMD curl -f <a href="http://localhost/status">http://localhost/status</a> || exit 1</li>
+</ul>
+<p>Compose File Syntax</p>
+<ul>
+<li>Image</li>
+<li>Build</li>
+<li>Image and Build</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

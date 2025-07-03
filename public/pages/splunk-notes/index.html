@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.123.7">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Splunk Notes &middot; ljhanson.github.io</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>ljhanson.github.io</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2025. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Splunk Notes</h1>
+  <time datetime=2019-11-08T00:00:00Z class="post-date">Fri, Nov 8, 2019</time>
+  <h2 id="splunk-components">Splunk Components</h2>
+<ul>
+<li>Indexer - Process, stores and creates events.  Does this via time stamped directories.</li>
+<li>Search Head - Front End, consolidate and enrich results</li>
+<li>Forwarder -  Agent that sends data to indexer
+<ul>
+<li>These three represent the minimal install of splunk.</li>
+</ul>
+</li>
+<li>Deployment Server</li>
+<li>Cluster Master</li>
+<li>License Master</li>
+</ul>
+<h2 id="roles">Roles</h2>
+<ul>
+<li>Admin
+<ul>
+<li>Can install apps, and create knowledge objects</li>
+</ul>
+</li>
+<li>Power
+<ul>
+<li>Can create and share knowledge objects for app users and do realtime searches.</li>
+</ul>
+</li>
+<li>User
+<ul>
+<li>Will only see own knowledge objects and those shared with them.</li>
+</ul>
+</li>
+</ul>
+<h2 id="links">Links</h2>
+<p><a href="https://splunkbase.splunk.com">Splunkbase</a> - App store for Splunk
+<a href="https://www.splunk.com/en_us/resources/videos.html#How-To">Splunk Howto&rsquo;s</a>
+<a href="https://docs.splunk.com">Splunk Documentation</a></p>
+<h2 id="splunk-index-time-process">Splunk Index Time Process</h2>
+<ul>
+<li>Input Phase
+<ul>
+<li>Handled at source (Usually the Forwarder)</li>
+<li>Data sent as stream, any config applies to whole stream</li>
+</ul>
+</li>
+<li>Parsing Phase
+<ul>
+<li>Handled by Indexer or Heavy Forwarder</li>
+<li>Datastream broken into events</li>
+<li>Advanced processing <strong>can</strong> occur</li>
+<li>Indexing Phase
+<ul>
+<li>License meter runs as data and is initially written to disk, prior to compression</li>
+<li>Can&rsquo;t be changed after written</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="indexs">Index&rsquo;s</h2>
+<ul>
+<li>Index&rsquo;s are directories where data will be stored.</li>
+<li>Separate index can be more efficient</li>
+<li>Allow access limits</li>
+<li>Allow Different retention policies</li>
+</ul>
+<h2 id="searching">Searching</h2>
+<ul>
+<li>Limit by time is best practice</li>
+<li>Commands that create starts and visualizations are called transforming commands</li>
+<li>Search jobs active for 10 minutes by default, Shared jobs are good for 7 days.</li>
+<li>Search Modes
+<ul>
+<li>Fast
+<ul>
+<li>default fields and only those necessary for search</li>
+<li>Field Discovery disabled</li>
+</ul>
+</li>
+<li>Smart
+<ul>
+<li>Default</li>
+<li>Toggles based on what’s being queried.</li>
+</ul>
+</li>
+<li>Full/Verbose
+<ul>
+<li>Everything possible</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Zoom in is original job</li>
+<li>Zoom out is new job</li>
+<li>“*” (Finish string), AND, OR, NOT all work</li>
+<li>Parentheses are for order of operations</li>
+<li>Quotes for exact phrases</li>
+<li>“\” to escape characters</li>
+<li>Before first “|” looks for matching terms, after pipe looks for commands</li>
+<li>Results displayed revers chronologically</li>
+<li>Time Ranges</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Unit</th>
+<th style="text-align:left">Abbreviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">seconds</td>
+<td style="text-align:left">s</td>
+</tr>
+<tr>
+<td style="text-align:left">minutes</td>
+<td style="text-align:left">m</td>
+</tr>
+<tr>
+<td style="text-align:left">hours</td>
+<td style="text-align:left">h</td>
+</tr>
+<tr>
+<td style="text-align:left">days</td>
+<td style="text-align:left">d</td>
+</tr>
+<tr>
+<td style="text-align:left">week</td>
+<td style="text-align:left">w</td>
+</tr>
+<tr>
+<td style="text-align:left">months</td>
+<td style="text-align:left">mon</td>
+</tr>
+<tr>
+<td style="text-align:left">years</td>
+<td style="text-align:left">y</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>“@“ used to snap to time unit specified
+<ul>
+<li>Rounds <strong>down</strong></li>
+</ul>
+</li>
+<li>Time range can be specified using earliest and latest</li>
+<li>Search job permissions and lifetime can be changed</li>
+</ul>
+<h2 id="fields">Fields</h2>
+<ul>
+<li>Fields are Key/Value pairs</li>
+<li>Interesting fields are fields that are present in 20% or more of the events yout search returned.</li>
+<li>‘<em>a</em>’ signifies string fileds</li>
+<li>‘#’ denotes number fields</li>
+<li>Filed names are case sensitive, values are not</li>
+<li>“=“ and “!=“ can be used for both numeric and string values</li>
+<li>“&gt;, &lt;, &gt;=, &lt;=“ Can only be used for numeric values.</li>
+<li>Can use “IN’ rather than chaining.
+<ul>
+<li>e.g. “status IN (“500”, “503”)</li>
+</ul>
+</li>
+<li>subnet/CIDR aware for searches</li>
+<li>!= vs. NOT
+<ul>
+<li>Both exclude events</li>
+<li>!= returns events where field exists and value doesn’t equal query</li>
+<li>NOT returns events where filed exists and value doesn’t equal query <strong>and all events that field doesn’t exist</strong></li>
+<li>Only same when field always exists in data.</li>
+</ul>
+</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Time is most critical</li>
+<li>Second Tier
+<ul>
+<li>index</li>
+<li>host</li>
+<li>source</li>
+<li>sourcetype</li>
+</ul>
+</li>
+<li>More you tell, better results</li>
+<li>inclusion, better than exclusion</li>
+<li>Filter early</li>
+<li>Avoid wildcards at beginning or middle of string</li>
+<li>When possible use OR instead of wildcards</li>
+</ul>
+<h2 id="splunk-search-language-spl-fundamentals">Splunk Search Language (SPL) Fundamentals</h2>
+<ul>
+<li>“|” works like UNIX pipes for searches</li>
+<li>Ctrl|Command + “\” moves pipes to new lines</li>
+<li>Field extraction is costly and only affects displayed results</li>
+<li>table command creates nicely formatted tables of results</li>
+<li>rename command renames field names in display
+<ul>
+<li>have to use new name in subsequent commands</li>
+<li>renames needed to be quoted</li>
+</ul>
+</li>
+<li>dedup command removes duplicate results
+<ul>
+<li>Can be filed specific</li>
+</ul>
+</li>
+<li>Sort, ascending or descending order
+<ul>
+<li>+ is ascending, - is descending</li>
+<li>space between operator and field name makes it affect all</li>
+<li>can use limit as part of sort</li>
+</ul>
+</li>
+</ul>
+<p><a href="http://docs.splunk.com/Documentation/Splunk/latest/SearchReference">Search Reference</a>
+<a href="http://docs.splunk.com/Documentation/Splunk/latest/SplunkEnterpriseQuickReferenceGuide">Search Quick Reference</a></p>
+<h2 id="transforming-commands">Transforming Commands</h2>
+<ul>
+<li>Top - Most common</li>
+<li>Rare - Least common</li>
+<li>Stats
+<ul>
+<li>count</li>
+<li>distinct_count (same as count but unique only)</li>
+<li>sum</li>
+<li>avg</li>
+<li>min</li>
+<li>max</li>
+<li>list</li>
+<li>values (same as list but unique values only)</li>
+</ul>
+</li>
+</ul>
+<h3 id="stats-must-be-in-same-pipe-or-event-may-no-longer-be-present-in-pipeline">Stats must be in same pipe or event may no longer be present in pipeline</h3>
+<ul>
+<li>Tables created with stats commands can be formatted</li>
+</ul>
+<h2 id="dashboards-and-visualizations">Dashboards and Visualizations</h2>
+<ul>
+<li>Best practice is to define naming convention for reports</li>
+<li>Be carefull of permissions on who report runs as to prevent inadvertent disclosure</li>
+<li>Time Range picker will only work on panels with inline search</li>
+<li>Reports are saved searches</li>
+<li>Best practice is to create dashboards based off reports, as a change in a report updates every dashboard the uses it.</li>
+</ul>
+<h2 id="pivots-and-datasets">Pivots and Datasets</h2>
+<ul>
+<li>Data Models are knowledge objects that provide the data structures that drives pivots
+<ul>
+<li>Created by Admin and Power User</li>
+</ul>
+</li>
+<li>Represented as tables</li>
+<li>Think of as slices of data</li>
+<li>Like and “AND’ in SQL</li>
+<li>Instant Pivot creates data model without query language</li>
+<li>Datasets help users find data and get answers faster</li>
+</ul>
+<h2 id="lookups">Lookups</h2>
+<ul>
+<li>Like vlookup in Excel</li>
+<li>Categorized as Dataset</li>
+<li>Setup
+<ul>
+<li>Define table</li>
+<li>Define lookup</li>
+</ul>
+</li>
+<li>Automatic lookup will do lookup in searches by default</li>
+<li>outputnew can be used as clause to avoid overwriting existing fields</li>
+</ul>
+<h2 id="scheduled-reports-and-alerts">Scheduled Reports and Alerts</h2>
+<ul>
+<li>Be careful with demand caused by reports
+<ul>
+<li>Use priority to manage
+<ul>
+<li>only done by admin</li>
+</ul>
+</li>
+<li>Use window for flexible start</li>
+</ul>
+</li>
+<li>Managed via settings</li>
+<li>Embedded reports are viewable by ##ANYONE## who can access the webpage.</li>
+<li>Alerts are continuously running searches</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

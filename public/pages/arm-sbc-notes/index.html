@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.123.7">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARM SBC Notes &middot; ljhanson.github.io</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>ljhanson.github.io</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2025. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>ARM SBC Notes</h1>
+  <time datetime=2019-09-13T00:00:00Z class="post-date">Fri, Sep 13, 2019</time>
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Serial Console</span>
+</span></span><span style="display:flex;"><span>screen /dev/ttyUSB0 <span style="color:#ae81ff">115200</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Installing Fedora Images on host</span>
+</span></span><span style="display:flex;"><span>sudo dnf -y install arm-image-installer
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Writing Image File</span>
+</span></span><span style="display:flex;"><span>Usage: arm-image-installer &lt;options&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> --addconsole    - Add system console to extlinux.conf
+</span></span><span style="display:flex;"><span> --addkey<span style="color:#f92672">=</span>       - /path/to/ssh-public-key
+</span></span><span style="display:flex;"><span> --image<span style="color:#f92672">=</span>IMAGE   - xz compressed image file name
+</span></span><span style="display:flex;"><span> --media<span style="color:#f92672">=</span>DEVICE  - media device file <span style="color:#f92672">(</span>/dev/<span style="color:#f92672">[</span>sdX|mmcblkX<span style="color:#f92672">])</span>
+</span></span><span style="display:flex;"><span> --norootpass    - Remove the root password
+</span></span><span style="display:flex;"><span> --resizefs      - Resize root filesystem to fill media device
+</span></span><span style="display:flex;"><span> --supported     - List of supported hardware
+</span></span><span style="display:flex;"><span> --target<span style="color:#f92672">=</span>TARGET - target board
+</span></span><span style="display:flex;"><span> --version       - Display version and exit
+</span></span><span style="display:flex;"><span> -y              - Assumes yes, will not wait <span style="color:#66d9ef">for</span> confirmation
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Example: arm-image-installer --image<span style="color:#f92672">=</span>Fedora-Rawhide.xz --target<span style="color:#f92672">=</span>Bananapi --media<span style="color:#f92672">=</span>/dev/mmcblk0
+</span></span></code></pre></div><p>More help for Fedora is located at <a href="https://fedoraproject.org/wiki/Architectures/ARM/Installation.">https://fedoraproject.org/wiki/Architectures/ARM/Installation.</a></p>
+<p>Other OS, like FreeBSD or OpenBSD can be directly wrote to the minisd card assuming you pick the image for the specific SBC.</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>
