@@ -193,6 +193,9 @@
                 
                 
             
+                
+                
+            
             
                 
                 
@@ -254,6 +257,39 @@
 
             
                 
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/posts/">Posts</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            Recent
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="http://localhost:1313/posts/kured-restart-daemon/">Kured - Kubernetes Restart Daemon</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="http://localhost:1313/posts/nikola-setup-notes/">Nikola Setup Notes</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="http://localhost:1313/posts/cert-manager/">Cert Manager for Kubernetes</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="http://localhost:1313/posts/ubuntu-unattended-upgradws/">Ubuntu unattended upgrades</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="http://localhost:1313/posts/pi_install_-notes/">Pi Install Notes</a>
+                            </li>
+                        
+                    
                 
             
             
@@ -384,8 +420,564 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="posts">
     
     
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/kured-restart-daemon/">Kured - Kubernetes Restart Daemon</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2022-12-28T00:00:00Z" class="post-date">
+        December 28, 2022
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-kubernetes">
+        <a href="http://localhost:1313/tags/kubernetes">kubernetes</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
 </div>
 
+        
+        Kured is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS. This should allow a full OS install, to be more like an appliance install like K3OS which is no longer being actively developed.
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/nikola-setup-notes/">Nikola Setup Notes</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2021-03-23T00:00:00Z" class="post-date">
+        March 23, 2021
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        To get Pelican style metadata working in Nikola you must add the markdown metadata extension to your config.
+MARKDOWN_EXTENSIONS = [ &#34;markdown.extensions.fenced_code&#34;, &#34;markdown.extensions.codehilite&#34;, &#34;markdown.extensions.extra&#34;, &#34;markdown.extensions.meta&#34;, ] 
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/cert-manager/">Cert Manager for Kubernetes</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2021-01-21T00:00:00Z" class="post-date">
+        January 21, 2021
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-kubernetes">
+        <a href="http://localhost:1313/tags/kubernetes">kubernetes</a>
+      </li>
+      
+      <li class="tag-ssl">
+        <a href="http://localhost:1313/tags/ssl">ssl</a>
+      </li>
+      
+      <li class="tag-docker">
+        <a href="http://localhost:1313/tags/docker">docker</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        Overall installtion instructions are here. Cert Manager was installed by Helm v3, with the custom resource definitions (CRD).
+ClusterIssuer.yaml file sets up the connection to the CA (Let&rsquo;s Encrypt) in order to generate certs. - Requires an IAM policy for Route53 and DNS challenges - yaml file must be updated with approriate values (at a minimum role, possibly accessKey and secret)
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/ubuntu-unattended-upgradws/">Ubuntu unattended upgrades</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2021-01-21T00:00:00Z" class="post-date">
+        January 21, 2021
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-ubuntu">
+        <a href="http://localhost:1313/tags/ubuntu">ubuntu</a>
+      </li>
+      
+      <li class="tag-linux">
+        <a href="http://localhost:1313/tags/linux">linux</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        Unattended upgrades for Ubuntu
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/pi_install_-notes/">Pi Install Notes</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2020-12-07T00:00:00Z" class="post-date">
+        December 7, 2020
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-pi">
+        <a href="http://localhost:1313/tags/pi">pi</a>
+      </li>
+      
+      <li class="tag-install">
+        <a href="http://localhost:1313/tags/install">install</a>
+      </li>
+      
+      <li class="tag-vpn">
+        <a href="http://localhost:1313/tags/vpn">vpn</a>
+      </li>
+      
+      <li class="tag-pihole">
+        <a href="http://localhost:1313/tags/pihole">pihole</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        #Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &rsquo;s/#?DNSStubListener=yes/DNSStubListener=no/g&rsquo; /etc/systemd/resolved.conf Add hostname to /etc/hosts curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https
+Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53
+        
+        <div class="read-more-link">
+            <a href="/posts/pi_install_-notes/">Read More…</a>
+        </div>
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/splunk-notes/">Splunk Notes</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2019-11-08T00:00:00Z" class="post-date">
+        November 8, 2019
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>4 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        Splunk Components Indexer - Process, stores and creates events. Does this via time stamped directories. Search Head - Front End, consolidate and enrich results Forwarder - Agent that sends data to indexer These three represent the minimal install of splunk. Deployment Server Cluster Master License Master Roles Admin Can install apps, and create knowledge objects Power Can create and share knowledge objects for app users and do realtime searches. User Will only see own knowledge objects and those shared with them.
+        
+        <div class="read-more-link">
+            <a href="/posts/splunk-notes/">Read More…</a>
+        </div>
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/aws-security-notes/">Notes from AWS Security Maturity Roadmap by Scott Piper (summitroute.com)</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2019-11-02T00:00:00Z" class="post-date">
+        November 2, 2019
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        TODO: Subscribe to recommended keeping up to dates TODO: Buy/Read Securing DevOPS: Security in the Cloud
+Most common security incidents
+Public S3 buckets Leaked access keys Comprised IAM roles from EC2 allowing access to metadata service at 169.254.169.254 
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/docker-reference/">Docker Commands Reference</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2019-10-08T00:00:00Z" class="post-date">
+        October 8, 2019
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>2 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        Command Description start Start Container stop Stops Container restart Restart Container kill Kill Container attach Attach terminal to running container exec Excutes command within a running container inspect Detail output about running container in JSON history Shows history of container image Dockerfile Commands
+Command Reference FROM Base image, usually first WORKDIR Set&rsquo;s working directory ADD Adds file from source to destination. Can be URL, Will Unzip COPY Copy from host machine.
+        
+        <div class="read-more-link">
+            <a href="/posts/docker-reference/">Read More…</a>
+        </div>
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/arm-sbc-notes/">ARM SBC Notes</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2019-09-13T00:00:00Z" class="post-date">
+        September 13, 2019
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-arm">
+        <a href="http://localhost:1313/tags/arm">arm</a>
+      </li>
+      
+      <li class="tag-sbc">
+        <a href="http://localhost:1313/tags/sbc">sbc</a>
+      </li>
+      
+      <li class="tag-notes">
+        <a href="http://localhost:1313/tags/notes">notes</a>
+      </li>
+      
+      <li class="tag-Fedora">
+        <a href="http://localhost:1313/tags/fedora">Fedora</a>
+      </li>
+      
+      <li class="tag-docker">
+        <a href="http://localhost:1313/tags/docker">docker</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        # Serial Console screen /dev/ttyUSB0 115200 # Installing Fedora Images on host sudo dnf -y install arm-image-installer # Writing Image File Usage: arm-image-installer &lt;options&gt; --addconsole - Add system console to extlinux.conf --addkey= - /path/to/ssh-public-key --image=IMAGE - xz compressed image file name --media=DEVICE - media device file (/dev/[sdX|mmcblkX]) --norootpass - Remove the root password --resizefs - Resize root filesystem to fill media device --supported - List of supported hardware --target=TARGET - target board --version - Display version and exit -y - Assumes yes, will not wait for confirmation Example: arm-image-installer --image=Fedora-Rawhide.
+        
+        <div class="read-more-link">
+            <a href="/posts/arm-sbc-notes/">Read More…</a>
+        </div>
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/">Kubernetes Notes</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2019-09-13T00:00:00Z" class="post-date">
+        September 13, 2019
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>2 mins read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-docker">
+        <a href="http://localhost:1313/tags/docker">docker</a>
+      </li>
+      
+      <li class="tag-kubernetes">
+        <a href="http://localhost:1313/tags/kubernetes">kubernetes</a>
+      </li>
+      
+      <li class="tag-linux">
+        <a href="http://localhost:1313/tags/linux">linux</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        Your Kubernetes control-plane has initialized successfully!
+* Kubeadm init to start the cluster off. Success:
+To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &#34;kubectl apply -f [podnetwork].yaml&#34; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/ Then you can join any number of worker nodes by running the following on each as root: kubeadm join 192.
+        
+        <div class="read-more-link">
+            <a href="/posts/your-kubernetes-control-plane-has-initialized-successfully/">Read More…</a>
+        </div>
+        
+        
+    </article>
+</div>
+
+
+<hr>
+<div class="footer">
+<nav id="page-nav">
+
+    
+    
+    
+    <span class="page-number current">1</span>
+    
+    
+    
+    <a href="/page/2/">2</a>
+    
+    
+
+    
+    <a href="/page/2/" rel="next" class="extend next"> Next &raquo;</a>
+    
+</div>
 
 
             </main>

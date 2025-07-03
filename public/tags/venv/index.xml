@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/pages/bash-venv-functions/</guid>
       <description>Useful helper functions for venv</description>
     </item>
+    <item>
+      <title>Bash helper functions for venv</title>
+      <link>http://localhost:1313/posts/bash-venv-functions/</link>
+      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bash-venv-functions/</guid>
+      <description>Useful helper functions for venv</description>
+    </item>
   </channel>
 </rss>

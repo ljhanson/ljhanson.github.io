@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/pages/pi_install_-notes/</guid>
       <description>#Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &amp;rsquo;s/#?DNSStubListener=yes/DNSStubListener=no/g&amp;rsquo; /etc/systemd/resolved.conf Add hostname to /etc/hosts curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https&#xA;Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53</description>
     </item>
+    <item>
+      <title>Pi Install Notes</title>
+      <link>http://localhost:1313/posts/pi_install_-notes/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pi_install_-notes/</guid>
+      <description>#Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &amp;rsquo;s/#?DNSStubListener=yes/DNSStubListener=no/g&amp;rsquo; /etc/systemd/resolved.conf Add hostname to /etc/hosts curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https&#xA;Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53</description>
+    </item>
   </channel>
 </rss>
