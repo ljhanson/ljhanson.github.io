@@ -49,35 +49,38 @@
 
 
 
+  
+  
+  
+
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name"></title>
-<meta property="og:title" content=ZgotmplZ />
-<meta name="twitter:title" content=ZgotmplZ />
-<meta itemprop="name" content=ZgotmplZ />
-<meta name="application-name" content=ZgotmplZ />
+<title itemprop="name">Open Authority - Snippets in VSCode</title>
+<meta property="og:title" content=Open&#32;Authority&#32;-&#32;Snippets&#32;in&#32;VSCode />
+<meta name="twitter:title" content=Open&#32;Authority&#32;-&#32;Snippets&#32;in&#32;VSCode />
+<meta itemprop="name" content=Open&#32;Authority&#32;-&#32;Snippets&#32;in&#32;VSCode />
+<meta name="application-name" content=Open&#32;Authority&#32;-&#32;Snippets&#32;in&#32;VSCode />
 <meta property="og:site_name" content="" />
 
 
-<meta name="description" content="" />
-<meta itemprop="description" content="" />
-<meta property="og:description" content="" />
-<meta name="twitter:description" content="" />
+<meta name="description" content="Using Snippets in VSCode" />
+<meta itemprop="description" content="Using Snippets in VSCode" />
+<meta property="og:description" content="Using Snippets in VSCode" />
+<meta name="twitter:description" content="Using Snippets in VSCode" />
 
 
-<base href="http://localhost:1313/tags/vscode/" />
-<link rel="canonical" href="http://localhost:1313/tags/vscode/" itemprop="url" />
-<meta name="url" content="http://localhost:1313/tags/vscode/" />
-<meta name="twitter:url" content="http://localhost:1313/tags/vscode/" />
-<meta property="og:url" content="http://localhost:1313/tags/vscode/" />
+<base href="http://localhost:1313/posts/snippets-in-vscode/" />
+<link rel="canonical" href="http://localhost:1313/posts/snippets-in-vscode/" itemprop="url" />
+<meta name="url" content="http://localhost:1313/posts/snippets-in-vscode/" />
+<meta name="twitter:url" content="http://localhost:1313/posts/snippets-in-vscode/" />
+<meta property="og:url" content="http://localhost:1313/posts/snippets-in-vscode/" />
 
 
 <meta property="og:updated_time" content="2022-12-28T00:00:00Z" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='http://localhost:1313/sitemap.xml' />
-<link href="http://localhost:1313/tags/vscode/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -418,25 +421,104 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Vscode</h1>
-<ul class="entries">
-    
-        <h3 style="text-align: center;">2022</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/posts/snippets-in-vscode/">Snippets in VSCode</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">December 28, 2022</time>
-                </span>
-            </li>
-        
-    
-</ul>
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/snippets-in-vscode/">Snippets in VSCode</a>
+  </h1>
 
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2022-12-28T00:00:00Z" class="post-date">
+        December 28, 2022
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-vscode">
+        <a href="http://localhost:1313/tags/vscode">vscode</a>
+      </li>
+      
+      <li class="tag-blog">
+        <a href="http://localhost:1313/tags/blog">blog</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <p>You can create snippets to add content to files in VSCode to put in boilerplate.  In this example I&rsquo;m using a snippet to create the frontmatter for a blogpost.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;Markdown FrontMatter&#34;</span>: {
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;prefix&#34;</span>: <span style="color:#e6db74">&#34;eventFrontMatter&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;body&#34;</span>: [
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;---&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;title: $1&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;date: $2&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;author: L.J. Hanson&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;tags: [$3]&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;slug: $4&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;description: $5&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;draft: true&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;---&#34;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	],
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Markdown FrontMatter&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="http://localhost:1313/posts/nikola-setup-notes/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Nikola Setup Notes</a>
+        
+	    
+            <div class="next-post">
+                <a href="http://localhost:1313/posts/kured-restart-daemon/?ref=footer"><span style="font-weight:bold;">Next »</span><br>Kured - Kubernetes Restart Daemon</a>
+            </div>
+        
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>
