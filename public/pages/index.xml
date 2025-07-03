@@ -2,164 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on </title>
-    <link>//localhost:1313/pages/</link>
+    <link>http://localhost:1313/pages/</link>
     <description>Recent content in Pages on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jan 2023 11:34:03 -0500</lastBuildDate>
-    <atom:link href="//localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K3s Install Notes</title>
-      <link>//localhost:1313/pages/k3s-install-notes/</link>
+      <link>http://localhost:1313/pages/k3s-install-notes/</link>
       <pubDate>Sat, 07 Jan 2023 11:34:03 -0500</pubDate>
-      <guid>//localhost:1313/pages/k3s-install-notes/</guid>
+      <guid>http://localhost:1313/pages/k3s-install-notes/</guid>
       <description>#K3 Install Notes&#xA;Pre-Setup For 8Gb host use external mounts&#xA;ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &amp;#39;--disable&amp;#39; \ &amp;#39;traefik&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;servicelb&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;metrics-server&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;local-storage&amp;#39; \ &amp;#39;--write-kubeconfig-mode 644&amp;#39; \ &amp;#39;--node-label &amp;#34;k3s-upgrade=true&amp;#34;&amp;#39; \ &amp;#39;--flannel-backend=wireguard-native&amp;#39; - For worker nodes need: - K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server - K3S_URL is &amp;#34;https://&amp;lt;server host&amp;gt;:6443&amp;#34; ## Setting up upgrades Install upgrade server ```sh kubectl apply -f https://github.</description>
     </item>
     <item>
       <title>Kured - Kubernetes Restart Daemon</title>
-      <link>//localhost:1313/pages/kured-restart-daemon/</link>
+      <link>http://localhost:1313/pages/kured-restart-daemon/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/kured-restart-daemon/</guid>
+      <guid>http://localhost:1313/pages/kured-restart-daemon/</guid>
       <description>Kured is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS. This should allow a full OS install, to be more like an appliance install like K3OS which is no longer being actively developed.</description>
     </item>
     <item>
       <title>Snippets in VSCode</title>
-      <link>//localhost:1313/pages/snippets-in-vscode/</link>
+      <link>http://localhost:1313/pages/snippets-in-vscode/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/snippets-in-vscode/</guid>
+      <guid>http://localhost:1313/pages/snippets-in-vscode/</guid>
       <description>You can create snippets to add content to files in VSCode to put in boilerplate. In this example I&amp;rsquo;m using a snippet to create the frontmatter for a blogpost.&#xA;{ &amp;#34;Markdown FrontMatter&amp;#34;: { &amp;#34;prefix&amp;#34;: &amp;#34;eventFrontMatter&amp;#34;, &amp;#34;body&amp;#34;: [ &amp;#34;---&amp;#34;, &amp;#34;title: $1&amp;#34;, &amp;#34;date: $2&amp;#34;, &amp;#34;author: L.J. Hanson&amp;#34;, &amp;#34;tags: [$3]&amp;#34;, &amp;#34;slug: $4&amp;#34;, &amp;#34;description: $5&amp;#34;, &amp;#34;draft: true&amp;#34;, &amp;#34;---&amp;#34;, &amp;#34;&amp;#34; ], &amp;#34;description&amp;#34;: &amp;#34;Markdown FrontMatter&amp;#34; } } </description>
     </item>
     <item>
       <title>Nikola Setup Notes</title>
-      <link>//localhost:1313/pages/nikola-setup-notes/</link>
+      <link>http://localhost:1313/pages/nikola-setup-notes/</link>
       <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/nikola-setup-notes/</guid>
+      <guid>http://localhost:1313/pages/nikola-setup-notes/</guid>
       <description>To get Pelican style metadata working in Nikola you must add the markdown metadata extension to your config.&#xA;MARKDOWN_EXTENSIONS = [ &amp;#34;markdown.extensions.fenced_code&amp;#34;, &amp;#34;markdown.extensions.codehilite&amp;#34;, &amp;#34;markdown.extensions.extra&amp;#34;, &amp;#34;markdown.extensions.meta&amp;#34;, ] </description>
     </item>
     <item>
       <title>Cert Manager for Kubernetes</title>
-      <link>//localhost:1313/pages/cert-manager/</link>
+      <link>http://localhost:1313/pages/cert-manager/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/cert-manager/</guid>
+      <guid>http://localhost:1313/pages/cert-manager/</guid>
       <description>Overall installtion instructions are here. Cert Manager was installed by Helm v3, with the custom resource definitions (CRD).&#xA;ClusterIssuer.yaml file sets up the connection to the CA (Let&amp;rsquo;s Encrypt) in order to generate certs. - Requires an IAM policy for Route53 and DNS challenges - yaml file must be updated with approriate values (at a minimum role, possibly accessKey and secret)</description>
     </item>
     <item>
       <title>Ubuntu unattended upgrades</title>
-      <link>//localhost:1313/pages/ubuntu-unattended-upgradws/</link>
+      <link>http://localhost:1313/pages/ubuntu-unattended-upgradws/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/ubuntu-unattended-upgradws/</guid>
+      <guid>http://localhost:1313/pages/ubuntu-unattended-upgradws/</guid>
       <description>Unattended upgrades for Ubuntu</description>
     </item>
     <item>
       <title>Pi Install Notes</title>
-      <link>//localhost:1313/pages/pi_install_-notes/</link>
+      <link>http://localhost:1313/pages/pi_install_-notes/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/pi_install_-notes/</guid>
+      <guid>http://localhost:1313/pages/pi_install_-notes/</guid>
       <description>#Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &amp;rsquo;s/#?DNSStubListener=yes/DNSStubListener=no/g&amp;rsquo; /etc/systemd/resolved.conf Add hostname to /etc/hosts curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https&#xA;Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53</description>
     </item>
     <item>
       <title>Splunk Notes</title>
-      <link>//localhost:1313/pages/splunk-notes/</link>
+      <link>http://localhost:1313/pages/splunk-notes/</link>
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/splunk-notes/</guid>
+      <guid>http://localhost:1313/pages/splunk-notes/</guid>
       <description>Splunk Components Indexer - Process, stores and creates events. Does this via time stamped directories. Search Head - Front End, consolidate and enrich results Forwarder - Agent that sends data to indexer These three represent the minimal install of splunk. Deployment Server Cluster Master License Master Roles Admin Can install apps, and create knowledge objects Power Can create and share knowledge objects for app users and do realtime searches. User Will only see own knowledge objects and those shared with them.</description>
     </item>
     <item>
       <title>Notes from AWS Security Maturity Roadmap by Scott Piper (summitroute.com)</title>
-      <link>//localhost:1313/pages/aws-security-notes/</link>
+      <link>http://localhost:1313/pages/aws-security-notes/</link>
       <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/aws-security-notes/</guid>
+      <guid>http://localhost:1313/pages/aws-security-notes/</guid>
       <description>TODO: Subscribe to recommended keeping up to dates TODO: Buy/Read Securing DevOPS: Security in the Cloud&#xA;Most common security incidents&#xA;Public S3 buckets Leaked access keys Comprised IAM roles from EC2 allowing access to metadata service at 169.254.169.254 </description>
     </item>
     <item>
       <title>Docker Commands Reference</title>
-      <link>//localhost:1313/pages/docker-reference/</link>
+      <link>http://localhost:1313/pages/docker-reference/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/docker-reference/</guid>
+      <guid>http://localhost:1313/pages/docker-reference/</guid>
       <description>Command Description start Start Container stop Stops Container restart Restart Container kill Kill Container attach Attach terminal to running container exec Excutes command within a running container inspect Detail output about running container in JSON history Shows history of container image Dockerfile Commands&#xA;Command Reference FROM Base image, usually first WORKDIR Set&amp;rsquo;s working directory ADD Adds file from source to destination. Can be URL, Will Unzip COPY Copy from host machine.</description>
     </item>
     <item>
       <title>ARM SBC Notes</title>
-      <link>//localhost:1313/pages/arm-sbc-notes/</link>
+      <link>http://localhost:1313/pages/arm-sbc-notes/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/arm-sbc-notes/</guid>
+      <guid>http://localhost:1313/pages/arm-sbc-notes/</guid>
       <description># Serial Console screen /dev/ttyUSB0 115200 # Installing Fedora Images on host sudo dnf -y install arm-image-installer # Writing Image File Usage: arm-image-installer &amp;lt;options&amp;gt; --addconsole - Add system console to extlinux.conf --addkey= - /path/to/ssh-public-key --image=IMAGE - xz compressed image file name --media=DEVICE - media device file (/dev/[sdX|mmcblkX]) --norootpass - Remove the root password --resizefs - Resize root filesystem to fill media device --supported - List of supported hardware --target=TARGET - target board --version - Display version and exit -y - Assumes yes, will not wait for confirmation Example: arm-image-installer --image=Fedora-Rawhide.</description>
     </item>
     <item>
       <title>Kubernetes Notes</title>
-      <link>//localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</link>
+      <link>http://localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</guid>
+      <guid>http://localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</guid>
       <description>Your Kubernetes control-plane has initialized successfully!&#xA;* Kubeadm init to start the cluster off. Success:&#xA;To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &amp;#34;kubectl apply -f [podnetwork].yaml&amp;#34; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/ Then you can join any number of worker nodes by running the following on each as root: kubeadm join 192.</description>
     </item>
     <item>
       <title>Idrac Notes</title>
-      <link>//localhost:1313/pages/idrac-notes/</link>
+      <link>http://localhost:1313/pages/idrac-notes/</link>
       <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/idrac-notes/</guid>
+      <guid>http://localhost:1313/pages/idrac-notes/</guid>
       <description>How to restart/power off from idrac terminal&#xA;# power server off racadm serveraction powerdown # power server on racadm serveraction powerup # perform server power cycle racadm serveraction powercycle # force hard server power reset racadm serveraction hardreset </description>
     </item>
     <item>
       <title>Gitea in a FreeBSD jail</title>
-      <link>//localhost:1313/pages/gitea-in-a-jail/</link>
+      <link>http://localhost:1313/pages/gitea-in-a-jail/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/gitea-in-a-jail/</guid>
+      <guid>http://localhost:1313/pages/gitea-in-a-jail/</guid>
       <description>Gitea in a jail</description>
     </item>
     <item>
       <title>Bash helper functions for venv</title>
-      <link>//localhost:1313/pages/bash-venv-functions/</link>
+      <link>http://localhost:1313/pages/bash-venv-functions/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/bash-venv-functions/</guid>
+      <guid>http://localhost:1313/pages/bash-venv-functions/</guid>
       <description>Useful helper functions for venv</description>
     </item>
     <item>
       <title>FreeBSD 12 notes for Optiplex 755</title>
-      <link>//localhost:1313/pages/freebsd-12-notes-for-optiplex-755/</link>
+      <link>http://localhost:1313/pages/freebsd-12-notes-for-optiplex-755/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/freebsd-12-notes-for-optiplex-755/</guid>
+      <guid>http://localhost:1313/pages/freebsd-12-notes-for-optiplex-755/</guid>
       <description>Things to remember for next FreeBSD 12 install.&#xA;To switch to current, as opposed to quarterly packages, create the file /usr/local/etc/pkg/repos/FreeBSD.conf with the folowing content: FreeBSD: { url: &amp;#34;pkg+http://pkg.FreeBSD.org/${ABI}/latest&amp;#34; } drm-kmod package from ports gets KMS to work. </description>
     </item>
     <item>
       <title>Powerline fonts in ChromeOS ssh client</title>
-      <link>//localhost:1313/pages/powerline-fonts-in-chromeos-ssh-client/</link>
+      <link>http://localhost:1313/pages/powerline-fonts-in-chromeos-ssh-client/</link>
       <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/powerline-fonts-in-chromeos-ssh-client/</guid>
+      <guid>http://localhost:1313/pages/powerline-fonts-in-chromeos-ssh-client/</guid>
       <description>For folks using powerline status bar, the correct font is important to ensure that powerline displays properly. The custom CSS file located here can be placed in the user ssh box of the ChromeOS ssh client.&#xA;Originally from github/wernight</description>
     </item>
     <item>
       <title>Powerline from ports on FreeBSD</title>
-      <link>//localhost:1313/pages/powerline-from-ports-on-freebsd/</link>
+      <link>http://localhost:1313/pages/powerline-from-ports-on-freebsd/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/powerline-from-ports-on-freebsd/</guid>
+      <guid>http://localhost:1313/pages/powerline-from-ports-on-freebsd/</guid>
       <description>In your .profile add the following:&#xA;/usr/local/bin/powerline-daemon -q POWERLINE_BASH_CONTINUATION=1POWERLINE_BASH_SELECT=1 source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh Partly from here.</description>
     </item>
     <item>
       <title>Regular Expression Tester</title>
-      <link>//localhost:1313/pages/regular-expression-tester/</link>
+      <link>http://localhost:1313/pages/regular-expression-tester/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/regular-expression-tester/</guid>
+      <guid>http://localhost:1313/pages/regular-expression-tester/</guid>
       <description>A web based regular expression tester: Regex101</description>
     </item>
     <item>
       <title>Ensuring you have pip for Python 3 on FreeBSD</title>
-      <link>//localhost:1313/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</link>
+      <link>http://localhost:1313/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</guid>
+      <guid>http://localhost:1313/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</guid>
       <description>By default pip doesn&amp;rsquo;t get installed with the python35 port. To fix this as root execute the following:&#xA;python3 -m ensurepip </description>
     </item>
     <item>
       <title>Jupyter Notebooks in a subdir with nginx.</title>
-      <link>//localhost:1313/pages/jupyter-notebooks-in-a-subdir-with-nginx/</link>
+      <link>http://localhost:1313/pages/jupyter-notebooks-in-a-subdir-with-nginx/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/jupyter-notebooks-in-a-subdir-with-nginx/</guid>
+      <guid>http://localhost:1313/pages/jupyter-notebooks-in-a-subdir-with-nginx/</guid>
       <description>Nginx section for subdir:&#xA;location ^~ /&amp;lt;subdir&amp;gt;/ { proxy_set_header X-Real-IP $remote_addr; proxy_set_header HOST $http_host; proxy_set_header X-NginX-Proxy true; proxy_pass http://127.0.0.1:8888; proxy_redirect off; proxy_http_version 1.1; proxy_set_header Upgrade &amp;#34;websocket&amp;#34;; proxy_set_header Connection &amp;#34;Upgrade&amp;#34;; proxy_read_timeout 86400; } Configuration changes for Jupyter:&#xA;c.NotebookApp.base_url = &amp;#39;/&amp;lt;subdir&amp;gt;/&amp;#39; c.NotebookApp.open_browser = False c.NotebookApp.password = &amp;#39;&amp;lt;password&amp;gt;&amp;#39; c.NotebookApp.trust_xheaders = True </description>
     </item>
     <item>
       <title>No place like home...</title>
-      <link>//localhost:1313/pages/no-place-like-home/</link>
+      <link>http://localhost:1313/pages/no-place-like-home/</link>
       <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/pages/no-place-like-home/</guid>
+      <guid>http://localhost:1313/pages/no-place-like-home/</guid>
       <description>This is my site until I get bored and stop updating it.</description>
     </item>
   </channel>
