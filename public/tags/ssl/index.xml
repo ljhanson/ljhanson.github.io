@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ssl on </title>
-    <link>http://localhost:1313/tags/ssl/</link>
+    <link>http://localhost:39589/tags/ssl/</link>
     <description>Recent content in Ssl on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39589/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cert Manager for Kubernetes</title>
-      <link>http://localhost:1313/pages/cert-manager/</link>
+      <link>http://localhost:39589/pages/cert-manager/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/cert-manager/</guid>
+      <guid>http://localhost:39589/pages/cert-manager/</guid>
       <description>Overall installtion instructions are here. Cert Manager was installed by Helm v3, with the custom resource definitions (CRD).&#xA;ClusterIssuer.yaml file sets up the connection to the CA (Let&amp;rsquo;s Encrypt) in order to generate certs. - Requires an IAM policy for Route53 and DNS challenges - yaml file must be updated with approriate values (at a minimum role, possibly accessKey and secret)</description>
     </item>
   </channel>

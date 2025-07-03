@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vpn on </title>
-    <link>http://localhost:1313/tags/vpn/</link>
+    <link>http://localhost:39589/tags/vpn/</link>
     <description>Recent content in Vpn on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39589/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pi Install Notes</title>
-      <link>http://localhost:1313/pages/pi_install_-notes/</link>
+      <link>http://localhost:39589/pages/pi_install_-notes/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/pi_install_-notes/</guid>
+      <guid>http://localhost:39589/pages/pi_install_-notes/</guid>
       <description>#Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &amp;rsquo;s/#?DNSStubListener=yes/DNSStubListener=no/g&amp;rsquo; /etc/systemd/resolved.conf Add hostname to /etc/hosts curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https&#xA;Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53</description>
     </item>
   </channel>

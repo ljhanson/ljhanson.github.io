@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jupyter on </title>
-    <link>http://localhost:1313/tags/jupyter/</link>
+    <link>http://localhost:39589/tags/jupyter/</link>
     <description>Recent content in Jupyter on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39589/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Regular Expression Tester</title>
-      <link>http://localhost:1313/pages/regular-expression-tester/</link>
+      <link>http://localhost:39589/pages/regular-expression-tester/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/regular-expression-tester/</guid>
+      <guid>http://localhost:39589/pages/regular-expression-tester/</guid>
       <description>A web based regular expression tester: Regex101</description>
     </item>
     <item>
       <title>Jupyter Notebooks in a subdir with nginx.</title>
-      <link>http://localhost:1313/pages/jupyter-notebooks-in-a-subdir-with-nginx/</link>
+      <link>http://localhost:39589/pages/jupyter-notebooks-in-a-subdir-with-nginx/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/jupyter-notebooks-in-a-subdir-with-nginx/</guid>
+      <guid>http://localhost:39589/pages/jupyter-notebooks-in-a-subdir-with-nginx/</guid>
       <description>Nginx section for subdir:&#xA;location ^~ /&amp;lt;subdir&amp;gt;/ { proxy_set_header X-Real-IP $remote_addr; proxy_set_header HOST $http_host; proxy_set_header X-NginX-Proxy true; proxy_pass http://127.0.0.1:8888; proxy_redirect off; proxy_http_version 1.1; proxy_set_header Upgrade &amp;#34;websocket&amp;#34;; proxy_set_header Connection &amp;#34;Upgrade&amp;#34;; proxy_read_timeout 86400; } Configuration changes for Jupyter:&#xA;c.NotebookApp.base_url = &amp;#39;/&amp;lt;subdir&amp;gt;/&amp;#39; c.NotebookApp.open_browser = False c.NotebookApp.password = &amp;#39;&amp;lt;password&amp;gt;&amp;#39; c.NotebookApp.trust_xheaders = True </description>
     </item>
   </channel>
