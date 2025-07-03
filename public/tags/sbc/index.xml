@@ -10,13 +10,6 @@
     <atom:link href="http://localhost:1313/tags/sbc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ARM SBC Notes</title>
-      <link>http://localhost:1313/pages/arm-sbc-notes/</link>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/arm-sbc-notes/</guid>
-      <description># Serial Console screen /dev/ttyUSB0 115200 # Installing Fedora Images on host sudo dnf -y install arm-image-installer # Writing Image File Usage: arm-image-installer &amp;lt;options&amp;gt; --addconsole - Add system console to extlinux.conf --addkey= - /path/to/ssh-public-key --image=IMAGE - xz compressed image file name --media=DEVICE - media device file (/dev/[sdX|mmcblkX]) --norootpass - Remove the root password --resizefs - Resize root filesystem to fill media device --supported - List of supported hardware --target=TARGET - target board --version - Display version and exit -y - Assumes yes, will not wait for confirmation Example: arm-image-installer --image=Fedora-Rawhide.</description>
-    </item>
-    <item>
-      <title>ARM SBC Notes</title>
       <link>http://localhost:1313/posts/arm-sbc-notes/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/arm-sbc-notes/</guid>
