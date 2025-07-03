@@ -1,0 +1,4 @@
+baseURL = 'http://ljhanson.github.io'
+languageCode = 'en-us'
+title = 'ljhanson.github.io'
+theme = 'hyde'
