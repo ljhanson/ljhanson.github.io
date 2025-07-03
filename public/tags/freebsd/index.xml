@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FreeBSD on </title>
-    <link>http://localhost:39589/tags/freebsd/</link>
+    <link>https://ljhanson.githib.io/tags/freebsd/</link>
     <description>Recent content in FreeBSD on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 May 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:39589/tags/freebsd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ljhanson.githib.io/tags/freebsd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gitea in a FreeBSD jail</title>
-      <link>http://localhost:39589/pages/gitea-in-a-jail/</link>
+      <link>https://ljhanson.githib.io/pages/gitea-in-a-jail/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39589/pages/gitea-in-a-jail/</guid>
+      <guid>https://ljhanson.githib.io/pages/gitea-in-a-jail/</guid>
       <description>Gitea in a jail</description>
     </item>
     <item>
       <title>Powerline from ports on FreeBSD</title>
-      <link>http://localhost:39589/pages/powerline-from-ports-on-freebsd/</link>
+      <link>https://ljhanson.githib.io/pages/powerline-from-ports-on-freebsd/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39589/pages/powerline-from-ports-on-freebsd/</guid>
+      <guid>https://ljhanson.githib.io/pages/powerline-from-ports-on-freebsd/</guid>
       <description>In your .profile add the following:&#xA;/usr/local/bin/powerline-daemon -q POWERLINE_BASH_CONTINUATION=1POWERLINE_BASH_SELECT=1 source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh Partly from here.</description>
     </item>
     <item>
       <title>Ensuring you have pip for Python 3 on FreeBSD</title>
-      <link>http://localhost:39589/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</link>
+      <link>https://ljhanson.githib.io/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39589/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</guid>
+      <guid>https://ljhanson.githib.io/pages/ensuring-you-have-pip-for-python-3-on-freebsd/</guid>
       <description>By default pip doesn&amp;rsquo;t get installed with the python35 port. To fix this as root execute the following:&#xA;python3 -m ensurepip </description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Idrac on </title>
-    <link>http://localhost:39589/tags/idrac/</link>
+    <link>https://ljhanson.githib.io/tags/idrac/</link>
     <description>Recent content in Idrac on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:39589/tags/idrac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ljhanson.githib.io/tags/idrac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Idrac Notes</title>
-      <link>http://localhost:39589/pages/idrac-notes/</link>
+      <link>https://ljhanson.githib.io/pages/idrac-notes/</link>
       <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39589/pages/idrac-notes/</guid>
+      <guid>https://ljhanson.githib.io/pages/idrac-notes/</guid>
       <description>How to restart/power off from idrac terminal&#xA;# power server off racadm serveraction powerdown # power server on racadm serveraction powerup # perform server power cycle racadm serveraction powercycle # force hard server power reset racadm serveraction hardreset </description>
     </item>
   </channel>
