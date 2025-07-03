@@ -1,4 +1,4 @@
-baseURL = "https://ljhanson.githib.io"
+baseURL = "https://ljhanson.github.io"
 languageCode = "en-us"
 theme = "poison"
 paginate = 10
