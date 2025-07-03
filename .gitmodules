@@ -4,3 +4,6 @@
 [submodule "content/pages"]
 	path = content/pages
 	url = https://github.com/ljhanson/content
+[submodule "themes/poison"]
+	path = themes/poison
+	url = https://github.com/lukeorth/poison

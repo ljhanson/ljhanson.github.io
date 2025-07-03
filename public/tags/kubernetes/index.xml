@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kubernetes on ljhanson.github.io</title>
-    <link>http://localhost:1313/tags/kubernetes/</link>
-    <description>Recent content in Kubernetes on ljhanson.github.io</description>
+    <title>Kubernetes on </title>
+    <link>//localhost:1313/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kured - Kubernetes Restart Daemon</title>
-      <link>http://localhost:1313/pages/kured-restart-daemon/</link>
+      <link>//localhost:1313/pages/kured-restart-daemon/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/kured-restart-daemon/</guid>
+      <guid>//localhost:1313/pages/kured-restart-daemon/</guid>
       <description>Kured is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS. This should allow a full OS install, to be more like an appliance install like K3OS which is no longer being actively developed.</description>
     </item>
     <item>
       <title>Cert Manager for Kubernetes</title>
-      <link>http://localhost:1313/pages/cert-manager/</link>
+      <link>//localhost:1313/pages/cert-manager/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/cert-manager/</guid>
+      <guid>//localhost:1313/pages/cert-manager/</guid>
       <description>Overall installtion instructions are here. Cert Manager was installed by Helm v3, with the custom resource definitions (CRD).&#xA;ClusterIssuer.yaml file sets up the connection to the CA (Let&amp;rsquo;s Encrypt) in order to generate certs. - Requires an IAM policy for Route53 and DNS challenges - yaml file must be updated with approriate values (at a minimum role, possibly accessKey and secret)</description>
     </item>
     <item>
       <title>Kubernetes Notes</title>
-      <link>http://localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</link>
+      <link>//localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</guid>
+      <guid>//localhost:1313/pages/your-kubernetes-control-plane-has-initialized-successfully/</guid>
       <description>Your Kubernetes control-plane has initialized successfully!&#xA;* Kubeadm init to start the cluster off. Success:&#xA;To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &amp;#34;kubectl apply -f [podnetwork].yaml&amp;#34; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/ Then you can join any number of worker nodes by running the following on each as root: kubeadm join 192.</description>
     </item>
   </channel>

@@ -1,193 +1,193 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on ljhanson.github.io</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on ljhanson.github.io</description>
+    <title>Tags on </title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/tags/blog/</link>
+      <link>//localhost:1313/tags/blog/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blog/</guid>
+      <guid>//localhost:1313/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
+      <link>//localhost:1313/tags/kubernetes/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
+      <guid>//localhost:1313/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Vscode</title>
-      <link>http://localhost:1313/tags/vscode/</link>
+      <link>//localhost:1313/tags/vscode/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vscode/</guid>
+      <guid>//localhost:1313/tags/vscode/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
+      <link>//localhost:1313/tags/docker/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>//localhost:1313/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>//localhost:1313/tags/linux/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>//localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssl</title>
-      <link>http://localhost:1313/tags/ssl/</link>
+      <link>//localhost:1313/tags/ssl/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ssl/</guid>
+      <guid>//localhost:1313/tags/ssl/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>http://localhost:1313/tags/ubuntu/</link>
+      <link>//localhost:1313/tags/ubuntu/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ubuntu/</guid>
+      <guid>//localhost:1313/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Install</title>
-      <link>http://localhost:1313/tags/install/</link>
+      <link>//localhost:1313/tags/install/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/install/</guid>
+      <guid>//localhost:1313/tags/install/</guid>
       <description></description>
     </item>
     <item>
       <title>Pi</title>
-      <link>http://localhost:1313/tags/pi/</link>
+      <link>//localhost:1313/tags/pi/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pi/</guid>
+      <guid>//localhost:1313/tags/pi/</guid>
       <description></description>
     </item>
     <item>
       <title>Pihole</title>
-      <link>http://localhost:1313/tags/pihole/</link>
+      <link>//localhost:1313/tags/pihole/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pihole/</guid>
+      <guid>//localhost:1313/tags/pihole/</guid>
       <description></description>
     </item>
     <item>
       <title>Vpn</title>
-      <link>http://localhost:1313/tags/vpn/</link>
+      <link>//localhost:1313/tags/vpn/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vpn/</guid>
+      <guid>//localhost:1313/tags/vpn/</guid>
       <description></description>
     </item>
     <item>
       <title>Arm</title>
-      <link>http://localhost:1313/tags/arm/</link>
+      <link>//localhost:1313/tags/arm/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/arm/</guid>
+      <guid>//localhost:1313/tags/arm/</guid>
       <description></description>
     </item>
     <item>
       <title>Fedora</title>
-      <link>http://localhost:1313/tags/fedora/</link>
+      <link>//localhost:1313/tags/fedora/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fedora/</guid>
+      <guid>//localhost:1313/tags/fedora/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>http://localhost:1313/tags/notes/</link>
+      <link>//localhost:1313/tags/notes/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/notes/</guid>
+      <guid>//localhost:1313/tags/notes/</guid>
       <description></description>
     </item>
     <item>
       <title>Sbc</title>
-      <link>http://localhost:1313/tags/sbc/</link>
+      <link>//localhost:1313/tags/sbc/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sbc/</guid>
+      <guid>//localhost:1313/tags/sbc/</guid>
       <description></description>
     </item>
     <item>
       <title>Idrac</title>
-      <link>http://localhost:1313/tags/idrac/</link>
+      <link>//localhost:1313/tags/idrac/</link>
       <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/idrac/</guid>
+      <guid>//localhost:1313/tags/idrac/</guid>
       <description></description>
     </item>
     <item>
       <title>FreeBSD</title>
-      <link>http://localhost:1313/tags/freebsd/</link>
+      <link>//localhost:1313/tags/freebsd/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/freebsd/</guid>
+      <guid>//localhost:1313/tags/freebsd/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>//localhost:1313/tags/git/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>//localhost:1313/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Jails</title>
-      <link>http://localhost:1313/tags/jails/</link>
+      <link>//localhost:1313/tags/jails/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jails/</guid>
+      <guid>//localhost:1313/tags/jails/</guid>
       <description></description>
     </item>
     <item>
       <title>Bash</title>
-      <link>http://localhost:1313/tags/bash/</link>
+      <link>//localhost:1313/tags/bash/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bash/</guid>
+      <guid>//localhost:1313/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>//localhost:1313/tags/python/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>//localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Venv</title>
-      <link>http://localhost:1313/tags/venv/</link>
+      <link>//localhost:1313/tags/venv/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/venv/</guid>
+      <guid>//localhost:1313/tags/venv/</guid>
       <description></description>
     </item>
     <item>
       <title>Tmux</title>
-      <link>http://localhost:1313/tags/tmux/</link>
+      <link>//localhost:1313/tags/tmux/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tmux/</guid>
+      <guid>//localhost:1313/tags/tmux/</guid>
       <description></description>
     </item>
     <item>
       <title>Jupyter</title>
-      <link>http://localhost:1313/tags/jupyter/</link>
+      <link>//localhost:1313/tags/jupyter/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jupyter/</guid>
+      <guid>//localhost:1313/tags/jupyter/</guid>
       <description></description>
     </item>
     <item>
       <title>Nginx</title>
-      <link>http://localhost:1313/tags/nginx/</link>
+      <link>//localhost:1313/tags/nginx/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nginx/</guid>
+      <guid>//localhost:1313/tags/nginx/</guid>
       <description></description>
     </item>
     <item>
       <title>Pip</title>
-      <link>http://localhost:1313/tags/pip/</link>
+      <link>//localhost:1313/tags/pip/</link>
       <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pip/</guid>
+      <guid>//localhost:1313/tags/pip/</guid>
       <description></description>
     </item>
   </channel>
