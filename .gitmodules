@@ -1,6 +1,3 @@
-[submodule "themes/hyde"]
-	path = themes/hyde
-	url = https://github.com/spf13/hyde
 [submodule "content/pages"]
 	path = content/pages
 	url = https://github.com/ljhanson/content
