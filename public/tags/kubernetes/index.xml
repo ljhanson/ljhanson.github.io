@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kubernetes on </title>
-    <link>http://localhost:1313/tags/kubernetes/</link>
+    <link>https://blog.openauthority.net/tags/kubernetes/</link>
     <description>Recent content in Kubernetes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jan 2023 11:34:03 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.openauthority.net/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K3s Install Notes</title>
-      <link>http://localhost:1313/posts/k3s-install-notes/</link>
+      <link>https://blog.openauthority.net/posts/k3s-install-notes/</link>
       <pubDate>Sat, 07 Jan 2023 11:34:03 -0500</pubDate>
-      <guid>http://localhost:1313/posts/k3s-install-notes/</guid>
+      <guid>https://blog.openauthority.net/posts/k3s-install-notes/</guid>
       <description>K3 Install Notes Pre-Setup For 8Gb host use external mounts&#xA;ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &amp;#39;--disable&amp;#39; \ &amp;#39;traefik&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;servicelb&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;metrics-server&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;local-storage&amp;#39; \ &amp;#39;--write-kubeconfig-mode 644&amp;#39; \ &amp;#39;--node-label &amp;#34;k3s-upgrade=true&amp;#34;&amp;#39; \ &amp;#39;--flannel-backend=wireguard-native&amp;#39; For worker nodes need: K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server K3S_URL is &amp;ldquo;https://:6443&amp;rdquo; Setting up upgrades Install upgrade server&#xA;kubectl apply -f https://github.</description>
     </item>
     <item>
       <title>Kured - Kubernetes Restart Daemon</title>
-      <link>http://localhost:1313/posts/kured-restart-daemon/</link>
+      <link>https://blog.openauthority.net/posts/kured-restart-daemon/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/kured-restart-daemon/</guid>
+      <guid>https://blog.openauthority.net/posts/kured-restart-daemon/</guid>
       <description>Kured is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS. This should allow a full OS install, to be more like an appliance install like K3OS which is no longer being actively developed.</description>
     </item>
     <item>
       <title>Cert Manager for Kubernetes</title>
-      <link>http://localhost:1313/posts/cert-manager/</link>
+      <link>https://blog.openauthority.net/posts/cert-manager/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cert-manager/</guid>
+      <guid>https://blog.openauthority.net/posts/cert-manager/</guid>
       <description>Overall installtion instructions are here. Cert Manager was installed by Helm v3, with the custom resource definitions (CRD).&#xA;ClusterIssuer.yaml file sets up the connection to the CA (Let&amp;rsquo;s Encrypt) in order to generate certs. - Requires an IAM policy for Route53 and DNS challenges - yaml file must be updated with approriate values (at a minimum role, possibly accessKey and secret)</description>
     </item>
     <item>
       <title>Kubernetes Notes</title>
-      <link>http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/</link>
+      <link>https://blog.openauthority.net/posts/your-kubernetes-control-plane-has-initialized-successfully/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/</guid>
+      <guid>https://blog.openauthority.net/posts/your-kubernetes-control-plane-has-initialized-successfully/</guid>
       <description>Your Kubernetes control-plane has initialized successfully!&#xA;* Kubeadm init to start the cluster off. Success:&#xA;#To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &amp;ldquo;kubectl apply -f [podnetwork].yaml&amp;rdquo; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/&#xA;Then you can join any number of worker nodes by running the following on each as root:</description>
     </item>
   </channel>

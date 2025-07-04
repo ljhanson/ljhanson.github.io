@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Venv on </title>
-    <link>http://localhost:1313/tags/venv/</link>
+    <link>https://blog.openauthority.net/tags/venv/</link>
     <description>Recent content in Venv on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 May 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/venv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.openauthority.net/tags/venv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bash helper functions for venv</title>
-      <link>http://localhost:1313/posts/bash-venv-functions/</link>
+      <link>https://blog.openauthority.net/posts/bash-venv-functions/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/bash-venv-functions/</guid>
+      <guid>https://blog.openauthority.net/posts/bash-venv-functions/</guid>
       <description>Useful helper functions for venv</description>
     </item>
   </channel>

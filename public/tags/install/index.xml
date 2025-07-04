@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Install on </title>
-    <link>http://localhost:1313/tags/install/</link>
+    <link>https://blog.openauthority.net/tags/install/</link>
     <description>Recent content in Install on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jan 2023 11:34:03 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.openauthority.net/tags/install/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K3s Install Notes</title>
-      <link>http://localhost:1313/posts/k3s-install-notes/</link>
+      <link>https://blog.openauthority.net/posts/k3s-install-notes/</link>
       <pubDate>Sat, 07 Jan 2023 11:34:03 -0500</pubDate>
-      <guid>http://localhost:1313/posts/k3s-install-notes/</guid>
+      <guid>https://blog.openauthority.net/posts/k3s-install-notes/</guid>
       <description>K3 Install Notes Pre-Setup For 8Gb host use external mounts&#xA;ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &amp;#39;--disable&amp;#39; \ &amp;#39;traefik&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;servicelb&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;metrics-server&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;local-storage&amp;#39; \ &amp;#39;--write-kubeconfig-mode 644&amp;#39; \ &amp;#39;--node-label &amp;#34;k3s-upgrade=true&amp;#34;&amp;#39; \ &amp;#39;--flannel-backend=wireguard-native&amp;#39; For worker nodes need: K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server K3S_URL is &amp;ldquo;https://:6443&amp;rdquo; Setting up upgrades Install upgrade server&#xA;kubectl apply -f https://github.</description>
     </item>
     <item>
       <title>Pi Install Notes</title>
-      <link>http://localhost:1313/posts/pi_install_notes/</link>
+      <link>https://blog.openauthority.net/posts/pi_install_notes/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/pi_install_notes/</guid>
+      <guid>https://blog.openauthority.net/posts/pi_install_notes/</guid>
       <description>Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &amp;#39;s/#?DNSStubListener=yes/DNSStubListener=no/g&amp;#39; /etc/systemd/resolved.conf Add hostname to /etc/hosts&#xA;curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53 # Default policy sudo ufw default deny incoming sudo ufw default allow outgoing sudo ufw enable </description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash on </title>
-    <link>http://localhost:1313/tags/bash/</link>
+    <link>https://blog.openauthority.net/tags/bash/</link>
     <description>Recent content in Bash on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.openauthority.net/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Idrac Notes</title>
-      <link>http://localhost:1313/posts/idrac-notes/</link>
+      <link>https://blog.openauthority.net/posts/idrac-notes/</link>
       <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/idrac-notes/</guid>
+      <guid>https://blog.openauthority.net/posts/idrac-notes/</guid>
       <description>How to restart/power off from idrac terminal&#xA;# power server off racadm serveraction powerdown # power server on racadm serveraction powerup # perform server power cycle racadm serveraction powercycle # force hard server power reset racadm serveraction hardreset </description>
     </item>
     <item>
       <title>Bash helper functions for venv</title>
-      <link>http://localhost:1313/posts/bash-venv-functions/</link>
+      <link>https://blog.openauthority.net/posts/bash-venv-functions/</link>
       <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/bash-venv-functions/</guid>
+      <guid>https://blog.openauthority.net/posts/bash-venv-functions/</guid>
       <description>Useful helper functions for venv</description>
     </item>
     <item>
       <title>Powerline from ports on FreeBSD</title>
-      <link>http://localhost:1313/posts/powerline-from-ports-on-freebsd/</link>
+      <link>https://blog.openauthority.net/posts/powerline-from-ports-on-freebsd/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/powerline-from-ports-on-freebsd/</guid>
+      <guid>https://blog.openauthority.net/posts/powerline-from-ports-on-freebsd/</guid>
       <description>In your .profile add the following:&#xA;/usr/local/bin/powerline-daemon -q POWERLINE_BASH_CONTINUATION=1POWERLINE_BASH_SELECT=1 source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh Partly from here.</description>
     </item>
   </channel>

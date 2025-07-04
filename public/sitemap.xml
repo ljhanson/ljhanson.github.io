@@ -2,162 +2,162 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.openauthority.net/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://blog.openauthority.net/tags/docker/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/install/</loc>
+    <loc>https://blog.openauthority.net/tags/install/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/k3s-install-notes/</loc>
+    <loc>https://blog.openauthority.net/posts/k3s-install-notes/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/kubernetes/</loc>
+    <loc>https://blog.openauthority.net/tags/kubernetes/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://blog.openauthority.net/tags/linux/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/notes/</loc>
+    <loc>https://blog.openauthority.net/tags/notes/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://blog.openauthority.net/posts/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blog.openauthority.net/tags/</loc>
     <lastmod>2023-01-07T11:34:03-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blog/</loc>
+    <loc>https://blog.openauthority.net/tags/blog/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/kured-restart-daemon/</loc>
+    <loc>https://blog.openauthority.net/posts/kured-restart-daemon/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/snippets-in-vscode/</loc>
+    <loc>https://blog.openauthority.net/posts/snippets-in-vscode/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vscode/</loc>
+    <loc>https://blog.openauthority.net/tags/vscode/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/nikola-setup-notes/</loc>
+    <loc>https://blog.openauthority.net/posts/nikola-setup-notes/</loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/cert-manager/</loc>
+    <loc>https://blog.openauthority.net/posts/cert-manager/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ssl/</loc>
+    <loc>https://blog.openauthority.net/tags/ssl/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ubuntu/</loc>
+    <loc>https://blog.openauthority.net/tags/ubuntu/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ubuntu-unattended-upgradws/</loc>
+    <loc>https://blog.openauthority.net/posts/ubuntu-unattended-upgradws/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pi/</loc>
+    <loc>https://blog.openauthority.net/tags/pi/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/pi_install_notes/</loc>
+    <loc>https://blog.openauthority.net/posts/pi_install_notes/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pihole/</loc>
+    <loc>https://blog.openauthority.net/tags/pihole/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vpn/</loc>
+    <loc>https://blog.openauthority.net/tags/vpn/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/splunk-notes/</loc>
+    <loc>https://blog.openauthority.net/posts/splunk-notes/</loc>
     <lastmod>2019-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/aws-security-notes/</loc>
+    <loc>https://blog.openauthority.net/posts/aws-security-notes/</loc>
     <lastmod>2019-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker-reference/</loc>
+    <loc>https://blog.openauthority.net/posts/docker-reference/</loc>
     <lastmod>2019-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/arm/</loc>
+    <loc>https://blog.openauthority.net/tags/arm/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/arm-sbc-notes/</loc>
+    <loc>https://blog.openauthority.net/posts/arm-sbc-notes/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fedora/</loc>
+    <loc>https://blog.openauthority.net/tags/fedora/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/</loc>
+    <loc>https://blog.openauthority.net/posts/your-kubernetes-control-plane-has-initialized-successfully/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sbc/</loc>
+    <loc>https://blog.openauthority.net/tags/sbc/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/bash/</loc>
+    <loc>https://blog.openauthority.net/tags/bash/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/idrac/</loc>
+    <loc>https://blog.openauthority.net/tags/idrac/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/idrac-notes/</loc>
+    <loc>https://blog.openauthority.net/posts/idrac-notes/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/server-management/</loc>
+    <loc>https://blog.openauthority.net/tags/server-management/</loc>
     <lastmod>2019-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/freebsd/</loc>
+    <loc>https://blog.openauthority.net/tags/freebsd/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>https://blog.openauthority.net/tags/git/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/gitea-in-a-jail/</loc>
+    <loc>https://blog.openauthority.net/posts/gitea-in-a-jail/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jails/</loc>
+    <loc>https://blog.openauthority.net/tags/jails/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/bash-venv-functions/</loc>
+    <loc>https://blog.openauthority.net/posts/bash-venv-functions/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://blog.openauthority.net/tags/python/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/venv/</loc>
+    <loc>https://blog.openauthority.net/tags/venv/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/freebsd-12-notes-for-optiplex-755/</loc>
+    <loc>https://blog.openauthority.net/posts/freebsd-12-notes-for-optiplex-755/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/powerline-fonts-in-chromeos-ssh-client/</loc>
+    <loc>https://blog.openauthority.net/posts/powerline-fonts-in-chromeos-ssh-client/</loc>
     <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/powerline-from-ports-on-freebsd/</loc>
+    <loc>https://blog.openauthority.net/posts/powerline-from-ports-on-freebsd/</loc>
     <lastmod>2017-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tmux/</loc>
+    <loc>https://blog.openauthority.net/tags/tmux/</loc>
     <lastmod>2017-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jupyter/</loc>
+    <loc>https://blog.openauthority.net/tags/jupyter/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/nginx/</loc>
+    <loc>https://blog.openauthority.net/tags/nginx/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/regular-expression-tester/</loc>
+    <loc>https://blog.openauthority.net/posts/regular-expression-tester/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ensuring-you-have-pip-for-python-3-on-freebsd/</loc>
+    <loc>https://blog.openauthority.net/posts/ensuring-you-have-pip-for-python-3-on-freebsd/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/jupyter-notebooks-in-a-subdir-with-nginx/</loc>
+    <loc>https://blog.openauthority.net/posts/jupyter-notebooks-in-a-subdir-with-nginx/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pip/</loc>
+    <loc>https://blog.openauthority.net/tags/pip/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/no-place-like-home/</loc>
+    <loc>https://blog.openauthority.net/posts/no-place-like-home/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://blog.openauthority.net/series/</loc>
   </url>
 </urlset>

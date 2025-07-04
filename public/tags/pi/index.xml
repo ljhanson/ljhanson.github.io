@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pi on </title>
-    <link>http://localhost:1313/tags/pi/</link>
+    <link>https://blog.openauthority.net/tags/pi/</link>
     <description>Recent content in Pi on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.openauthority.net/tags/pi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pi Install Notes</title>
-      <link>http://localhost:1313/posts/pi_install_notes/</link>
+      <link>https://blog.openauthority.net/posts/pi_install_notes/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/pi_install_notes/</guid>
+      <guid>https://blog.openauthority.net/posts/pi_install_notes/</guid>
       <description>Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &amp;#39;s/#?DNSStubListener=yes/DNSStubListener=no/g&amp;#39; /etc/systemd/resolved.conf Add hostname to /etc/hosts&#xA;curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53 # Default policy sudo ufw default deny incoming sudo ufw default allow outgoing sudo ufw enable </description>
     </item>
   </channel>
