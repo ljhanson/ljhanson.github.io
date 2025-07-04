@@ -429,527 +429,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     <article class="post">
         <div class="info">
   <h1 class="post-title">
-    <a href="http://localhost:1313/posts/arm-sbc-notes/">ARM SBC Notes</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2019-09-13T00:00:00Z" class="post-date">
-        September 13, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-arm">
-        <a href="http://localhost:1313/tags/arm">arm</a>
-      </li>
-      
-      <li class="tag-sbc">
-        <a href="http://localhost:1313/tags/sbc">sbc</a>
-      </li>
-      
-      <li class="tag-notes">
-        <a href="http://localhost:1313/tags/notes">notes</a>
-      </li>
-      
-      <li class="tag-Fedora">
-        <a href="http://localhost:1313/tags/fedora">Fedora</a>
-      </li>
-      
-      <li class="tag-docker">
-        <a href="http://localhost:1313/tags/docker">docker</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        # Serial Console screen /dev/ttyUSB0 115200 # Installing Fedora Images on host sudo dnf -y install arm-image-installer # Writing Image File Usage: arm-image-installer &lt;options&gt; --addconsole - Add system console to extlinux.conf --addkey= - /path/to/ssh-public-key --image=IMAGE - xz compressed image file name --media=DEVICE - media device file (/dev/[sdX|mmcblkX]) --norootpass - Remove the root password --resizefs - Resize root filesystem to fill media device --supported - List of supported hardware --target=TARGET - target board --version - Display version and exit -y - Assumes yes, will not wait for confirmation Example: arm-image-installer --image=Fedora-Rawhide.
-        
-        <div class="read-more-link">
-            <a href="/posts/arm-sbc-notes/">Read More…</a>
-        </div>
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/">Kubernetes Notes</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2019-09-13T00:00:00Z" class="post-date">
-        September 13, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>2 mins read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-docker">
-        <a href="http://localhost:1313/tags/docker">docker</a>
-      </li>
-      
-      <li class="tag-kubernetes">
-        <a href="http://localhost:1313/tags/kubernetes">kubernetes</a>
-      </li>
-      
-      <li class="tag-linux">
-        <a href="http://localhost:1313/tags/linux">linux</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        Your Kubernetes control-plane has initialized successfully!
-* Kubeadm init to start the cluster off. Success:
-To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &#34;kubectl apply -f [podnetwork].yaml&#34; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/ Then you can join any number of worker nodes by running the following on each as root: kubeadm join 192.
-        
-        <div class="read-more-link">
-            <a href="/posts/your-kubernetes-control-plane-has-initialized-successfully/">Read More…</a>
-        </div>
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/idrac-notes/">Idrac Notes</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2019-09-12T00:00:00Z" class="post-date">
-        September 12, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-bash">
-        <a href="http://localhost:1313/tags/bash">bash</a>
-      </li>
-      
-      <li class="tag-Idrac">
-        <a href="http://localhost:1313/tags/idrac">Idrac</a>
-      </li>
-      
-      <li class="tag-linux">
-        <a href="http://localhost:1313/tags/linux">linux</a>
-      </li>
-      
-      <li class="tag-notes">
-        <a href="http://localhost:1313/tags/notes">notes</a>
-      </li>
-      
-      <li class="tag-server management">
-        <a href="http://localhost:1313/tags/server-management">server management</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        How to restart/power off from idrac terminal
-# power server off racadm serveraction powerdown # power server on racadm serveraction powerup # perform server power cycle racadm serveraction powercycle # force hard server power reset racadm serveraction hardreset 
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/gitea-in-a-jail/">Gitea in a FreeBSD jail</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-      
-      <time datetime=" 2019-05-27T00:00:00Z" class="post-date">
-        May 27, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-git">
-        <a href="http://localhost:1313/tags/git">git</a>
-      </li>
-      
-      <li class="tag-FreeBSD">
-        <a href="http://localhost:1313/tags/freebsd">FreeBSD</a>
-      </li>
-      
-      <li class="tag-jails">
-        <a href="http://localhost:1313/tags/jails">jails</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        Gitea in a jail
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/bash-venv-functions/">Bash helper functions for venv</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2019-05-25T00:00:00Z" class="post-date">
-        May 25, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-Python">
-        <a href="http://localhost:1313/tags/python">Python</a>
-      </li>
-      
-      <li class="tag-bash">
-        <a href="http://localhost:1313/tags/bash">bash</a>
-      </li>
-      
-      <li class="tag-venv">
-        <a href="http://localhost:1313/tags/venv">venv</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        Useful helper functions for venv
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/freebsd-12-notes-for-optiplex-755/">FreeBSD 12 notes for Optiplex 755</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2019-01-12T00:00:00Z" class="post-date">
-        January 12, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        Things to remember for next FreeBSD 12 install.
-To switch to current, as opposed to quarterly packages, create the file /usr/local/etc/pkg/repos/FreeBSD.conf with the folowing content: FreeBSD: { url: &#34;pkg+http://pkg.FreeBSD.org/${ABI}/latest&#34; } drm-kmod package from ports gets KMS to work. 
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/powerline-fonts-in-chromeos-ssh-client/">Powerline fonts in ChromeOS ssh client</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2017-03-12T00:00:00Z" class="post-date">
-        March 12, 2017
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        For folks using powerline status bar, the correct font is important to ensure that powerline displays properly. The custom CSS file located here can be placed in the user ssh box of the ChromeOS ssh client.
-Originally from github/wernight
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/powerline-from-ports-on-freebsd/">Powerline from ports on FreeBSD</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2017-02-02T00:00:00Z" class="post-date">
-        February 2, 2017
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-Python">
-        <a href="http://localhost:1313/tags/python">Python</a>
-      </li>
-      
-      <li class="tag-FreeBSD">
-        <a href="http://localhost:1313/tags/freebsd">FreeBSD</a>
-      </li>
-      
-      <li class="tag-tmux">
-        <a href="http://localhost:1313/tags/tmux">tmux</a>
-      </li>
-      
-      <li class="tag-bash">
-        <a href="http://localhost:1313/tags/bash">bash</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        In your .profile add the following:
-/usr/local/bin/powerline-daemon -q POWERLINE_BASH_CONTINUATION=1POWERLINE_BASH_SELECT=1 source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh Partly from here.
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/regular-expression-tester/">Regular Expression Tester</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2017-01-05T00:00:00Z" class="post-date">
-        January 5, 2017
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-Python">
-        <a href="http://localhost:1313/tags/python">Python</a>
-      </li>
-      
-      <li class="tag-Jupyter">
-        <a href="http://localhost:1313/tags/jupyter">Jupyter</a>
-      </li>
-      
-      <li class="tag-nginx">
-        <a href="http://localhost:1313/tags/nginx">nginx</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        A web based regular expression tester: Regex101
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/ensuring-you-have-pip-for-python-3-on-freebsd/">Ensuring you have pip for Python 3 on FreeBSD</a>
+    <a href="http://localhost:1313/posts/jupyter-notebooks-in-a-subdir-with-nginx/">Jupyter Notebooks in a subdir with nginx.</a>
   </h1>
 
   <div class="headline">
@@ -977,16 +457,16 @@ Originally from github/wernight
     
     <ul class="tags">
       
-      <li class="tag-FreeBSD">
-        <a href="http://localhost:1313/tags/freebsd">FreeBSD</a>
-      </li>
-      
       <li class="tag-Python">
         <a href="http://localhost:1313/tags/python">Python</a>
       </li>
       
-      <li class="tag-Pip">
-        <a href="http://localhost:1313/tags/pip">Pip</a>
+      <li class="tag-nginx">
+        <a href="http://localhost:1313/tags/nginx">nginx</a>
+      </li>
+      
+      <li class="tag-Jupyter">
+        <a href="http://localhost:1313/tags/jupyter">Jupyter</a>
       </li>
       
     </ul>
@@ -1000,8 +480,51 @@ Originally from github/wernight
 </div>
 
         
-        By default pip doesn&rsquo;t get installed with the python35 port. To fix this as root execute the following:
-python3 -m ensurepip 
+        Nginx section for subdir:
+location ^~ /&lt;subdir&gt;/ { proxy_set_header X-Real-IP $remote_addr; proxy_set_header HOST $http_host; proxy_set_header X-NginX-Proxy true; proxy_pass http://127.0.0.1:8888; proxy_redirect off; proxy_http_version 1.1; proxy_set_header Upgrade &#34;websocket&#34;; proxy_set_header Connection &#34;Upgrade&#34;; proxy_read_timeout 86400; } Configuration changes for Jupyter:
+c.NotebookApp.base_url = &#39;/&lt;subdir&gt;/&#39; c.NotebookApp.open_browser = False c.NotebookApp.password = &#39;&lt;password&gt;&#39; c.NotebookApp.trust_xheaders = True 
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/no-place-like-home/">No place like home...</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2016-02-23T00:00:00Z" class="post-date">
+        February 23, 2016
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        This is my site until I get bored and stop updating it.
         
         
     </article>
@@ -1013,7 +536,7 @@ python3 -m ensurepip
 <nav id="page-nav">
 
     
-    <a href="/" rel="prev" class="extend prev">&laquo; Previous</a>
+    <a href="/page/2/" rel="prev" class="extend prev">&laquo; Previous</a>
     
     
     
@@ -1021,16 +544,14 @@ python3 -m ensurepip
     
     
     
-    <span class="page-number current">2</span>
+    <a href="/page/2/">2</a>
     
     
     
-    <a href="/page/3/">3</a>
+    <span class="page-number current">3</span>
     
     
 
-    
-    <a href="/page/3/" rel="next" class="extend next"> Next &raquo;</a>
     
 </div>
 

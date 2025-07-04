@@ -247,6 +247,12 @@
                 
                         
                 
+                        
+                
+                        
+                
+                        
+                
             
         
         
@@ -264,7 +270,15 @@
                         </li>
                         
                             <li class="bullet">
+                                <a href="http://localhost:1313/posts/k3s-install-notes/">K3s Install Notes</a>
+                            </li>
+                        
+                            <li class="bullet">
                                 <a href="http://localhost:1313/posts/kured-restart-daemon/">Kured - Kubernetes Restart Daemon</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="http://localhost:1313/posts/snippets-in-vscode/">Snippets in VSCode</a>
                             </li>
                         
                             <li class="bullet">
@@ -275,14 +289,6 @@
                                 <a href="http://localhost:1313/posts/cert-manager/">Cert Manager for Kubernetes</a>
                             </li>
                         
-                            <li class="bullet">
-                                <a href="http://localhost:1313/posts/ubuntu-unattended-upgradws/">Ubuntu unattended upgrades</a>
-                            </li>
-                        
-                            <li class="bullet">
-                                <a href="http://localhost:1313/posts/pi_install_-notes/">Pi Install Notes</a>
-                            </li>
-                        
                     
                 
             
@@ -291,6 +297,12 @@
                 
             
                 
+                
+                        
+                
+                        
+                
+                        
                 
                         
                 
@@ -417,6 +429,78 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     <article class="post">
         <div class="info">
   <h1 class="post-title">
+    <a href="http://localhost:1313/posts/k3s-install-notes/">K3s Install Notes</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2023-01-07T11:34:03-0500" class="post-date">
+        January 7, 2023
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-docker">
+        <a href="http://localhost:1313/tags/docker">docker</a>
+      </li>
+      
+      <li class="tag-install">
+        <a href="http://localhost:1313/tags/install">install</a>
+      </li>
+      
+      <li class="tag-kubernetes">
+        <a href="http://localhost:1313/tags/kubernetes">kubernetes</a>
+      </li>
+      
+      <li class="tag-linux">
+        <a href="http://localhost:1313/tags/linux">linux</a>
+      </li>
+      
+      <li class="tag-notes">
+        <a href="http://localhost:1313/tags/notes">notes</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        #K3 Install Notes
+Pre-Setup For 8Gb host use external mounts
+ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &#39;--disable&#39; \ &#39;traefik&#39; \ &#39;--disable&#39; \ &#39;servicelb&#39; \ &#39;--disable&#39; \ &#39;metrics-server&#39; \ &#39;--disable&#39; \ &#39;local-storage&#39; \ &#39;--write-kubeconfig-mode 644&#39; \ &#39;--node-label &#34;k3s-upgrade=true&#34;&#39; \ &#39;--flannel-backend=wireguard-native&#39; - For worker nodes need: - K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server - K3S_URL is &#34;https://&lt;server host&gt;:6443&#34; ## Setting up upgrades Install upgrade server ```sh kubectl apply -f https://github.
+        
+        <div class="read-more-link">
+            <a href="/posts/k3s-install-notes/">Read More…</a>
+        </div>
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
     <a href="http://localhost:1313/posts/kured-restart-daemon/">Kured - Kubernetes Restart Daemon</a>
   </h1>
 
@@ -461,6 +545,61 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 
         
         Kured is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS. This should allow a full OS install, to be more like an appliance install like K3OS which is no longer being actively developed.
+        
+        
+    </article>
+    <article class="post">
+        <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/snippets-in-vscode/">Snippets in VSCode</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2022-12-28T00:00:00Z" class="post-date">
+        December 28, 2022
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-vscode">
+        <a href="http://localhost:1313/tags/vscode">vscode</a>
+      </li>
+      
+      <li class="tag-blog">
+        <a href="http://localhost:1313/tags/blog">blog</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+        
+        You can create snippets to add content to files in VSCode to put in boilerplate. In this example I&rsquo;m using a snippet to create the frontmatter for a blogpost.
+{ &#34;Markdown FrontMatter&#34;: { &#34;prefix&#34;: &#34;eventFrontMatter&#34;, &#34;body&#34;: [ &#34;---&#34;, &#34;title: $1&#34;, &#34;date: $2&#34;, &#34;author: L.J. Hanson&#34;, &#34;tags: [$3]&#34;, &#34;slug: $4&#34;, &#34;description: $5&#34;, &#34;draft: true&#34;, &#34;---&#34;, &#34;&#34; ], &#34;description&#34;: &#34;Markdown FrontMatter&#34; } } 
         
         
     </article>
@@ -816,140 +955,6 @@ Command Reference FROM Base image, usually first WORKDIR Set&rsquo;s working dir
         
         
     </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/arm-sbc-notes/">ARM SBC Notes</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2019-09-13T00:00:00Z" class="post-date">
-        September 13, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-arm">
-        <a href="http://localhost:1313/tags/arm">arm</a>
-      </li>
-      
-      <li class="tag-sbc">
-        <a href="http://localhost:1313/tags/sbc">sbc</a>
-      </li>
-      
-      <li class="tag-notes">
-        <a href="http://localhost:1313/tags/notes">notes</a>
-      </li>
-      
-      <li class="tag-Fedora">
-        <a href="http://localhost:1313/tags/fedora">Fedora</a>
-      </li>
-      
-      <li class="tag-docker">
-        <a href="http://localhost:1313/tags/docker">docker</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        # Serial Console screen /dev/ttyUSB0 115200 # Installing Fedora Images on host sudo dnf -y install arm-image-installer # Writing Image File Usage: arm-image-installer &lt;options&gt; --addconsole - Add system console to extlinux.conf --addkey= - /path/to/ssh-public-key --image=IMAGE - xz compressed image file name --media=DEVICE - media device file (/dev/[sdX|mmcblkX]) --norootpass - Remove the root password --resizefs - Resize root filesystem to fill media device --supported - List of supported hardware --target=TARGET - target board --version - Display version and exit -y - Assumes yes, will not wait for confirmation Example: arm-image-installer --image=Fedora-Rawhide.
-        
-        <div class="read-more-link">
-            <a href="/posts/arm-sbc-notes/">Read More…</a>
-        </div>
-        
-        
-    </article>
-    <article class="post">
-        <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/">Kubernetes Notes</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-        
-          <span>L.J. Hanson - </span>
-        
-      
-      
-      <time datetime=" 2019-09-13T00:00:00Z" class="post-date">
-        September 13, 2019
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>2 mins read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-docker">
-        <a href="http://localhost:1313/tags/docker">docker</a>
-      </li>
-      
-      <li class="tag-kubernetes">
-        <a href="http://localhost:1313/tags/kubernetes">kubernetes</a>
-      </li>
-      
-      <li class="tag-linux">
-        <a href="http://localhost:1313/tags/linux">linux</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-
-  
-  
-
-  
-</div>
-
-        
-        Your Kubernetes control-plane has initialized successfully!
-* Kubeadm init to start the cluster off. Success:
-To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &#34;kubectl apply -f [podnetwork].yaml&#34; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/ Then you can join any number of worker nodes by running the following on each as root: kubeadm join 192.
-        
-        <div class="read-more-link">
-            <a href="/posts/your-kubernetes-control-plane-has-initialized-successfully/">Read More…</a>
-        </div>
-        
-        
-    </article>
 </div>
 
 
@@ -965,6 +970,10 @@ To start using your cluster, you need to run the following as a regular user: mk
     
     
     <a href="/page/2/">2</a>
+    
+    
+    
+    <a href="/page/3/">3</a>
     
     
 

@@ -6,14 +6,28 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jan 2023 11:34:03 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K3s Install Notes</title>
+      <link>http://localhost:1313/posts/k3s-install-notes/</link>
+      <pubDate>Sat, 07 Jan 2023 11:34:03 -0500</pubDate>
+      <guid>http://localhost:1313/posts/k3s-install-notes/</guid>
+      <description>#K3 Install Notes&#xA;Pre-Setup For 8Gb host use external mounts&#xA;ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &amp;#39;--disable&amp;#39; \ &amp;#39;traefik&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;servicelb&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;metrics-server&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;local-storage&amp;#39; \ &amp;#39;--write-kubeconfig-mode 644&amp;#39; \ &amp;#39;--node-label &amp;#34;k3s-upgrade=true&amp;#34;&amp;#39; \ &amp;#39;--flannel-backend=wireguard-native&amp;#39; - For worker nodes need: - K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server - K3S_URL is &amp;#34;https://&amp;lt;server host&amp;gt;:6443&amp;#34; ## Setting up upgrades Install upgrade server ```sh kubectl apply -f https://github.</description>
+    </item>
     <item>
       <title>Kured - Kubernetes Restart Daemon</title>
       <link>http://localhost:1313/posts/kured-restart-daemon/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/kured-restart-daemon/</guid>
       <description>Kured is a Kubernetes daemonset that performs safe automatic node reboots when the need to do so is indicated by the package management system of the underlying OS. This should allow a full OS install, to be more like an appliance install like K3OS which is no longer being actively developed.</description>
+    </item>
+    <item>
+      <title>Snippets in VSCode</title>
+      <link>http://localhost:1313/posts/snippets-in-vscode/</link>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/snippets-in-vscode/</guid>
+      <description>You can create snippets to add content to files in VSCode to put in boilerplate. In this example I&amp;rsquo;m using a snippet to create the frontmatter for a blogpost.&#xA;{ &amp;#34;Markdown FrontMatter&amp;#34;: { &amp;#34;prefix&amp;#34;: &amp;#34;eventFrontMatter&amp;#34;, &amp;#34;body&amp;#34;: [ &amp;#34;---&amp;#34;, &amp;#34;title: $1&amp;#34;, &amp;#34;date: $2&amp;#34;, &amp;#34;author: L.J. Hanson&amp;#34;, &amp;#34;tags: [$3]&amp;#34;, &amp;#34;slug: $4&amp;#34;, &amp;#34;description: $5&amp;#34;, &amp;#34;draft: true&amp;#34;, &amp;#34;---&amp;#34;, &amp;#34;&amp;#34; ], &amp;#34;description&amp;#34;: &amp;#34;Markdown FrontMatter&amp;#34; } } </description>
     </item>
     <item>
       <title>Nikola Setup Notes</title>
