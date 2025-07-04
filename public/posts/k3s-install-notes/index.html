@@ -249,6 +249,12 @@
                 
                         
                 
+                        
+                
+                        
+                
+                        
+                
             
         
         
@@ -274,15 +280,15 @@
                             </li>
                         
                             <li class="bullet">
+                                <a href="http://localhost:1313/posts/snippets-in-vscode/">Snippets in VSCode</a>
+                            </li>
+                        
+                            <li class="bullet">
                                 <a href="http://localhost:1313/posts/nikola-setup-notes/">Nikola Setup Notes</a>
                             </li>
                         
                             <li class="bullet">
                                 <a href="http://localhost:1313/posts/cert-manager/">Cert Manager for Kubernetes</a>
-                            </li>
-                        
-                            <li class="bullet">
-                                <a href="http://localhost:1313/posts/ubuntu-unattended-upgradws/">Ubuntu unattended upgrades</a>
                             </li>
                         
                     
@@ -293,6 +299,12 @@
                 
             
                 
+                
+                        
+                
+                        
+                
+                        
                 
                         
                 
@@ -474,7 +486,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   
 </div>
 
-  <p>#K3 Install Notes</p>
+  <h1 id="k3-install-notes">K3 Install Notes</h1>
 <h2 id="pre-setup">Pre-Setup</h2>
 <p>For 8Gb host use external mounts</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ln -s /datadrive/k3s/ /run/k3s
@@ -497,18 +509,21 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        <span style="color:#e6db74">&#39;--write-kubeconfig-mode 644&#39;</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        <span style="color:#e6db74">&#39;--node-label &#34;k3s-upgrade=true&#34;&#39;</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        <span style="color:#e6db74">&#39;--flannel-backend=wireguard-native&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- For worker nodes need:
-</span></span><span style="display:flex;"><span>    - K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server
-</span></span><span style="display:flex;"><span>    - K3S_URL is <span style="color:#e6db74">&#34;https://&lt;server host&gt;:6443&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">## Setting up upgrades</span>
-</span></span><span style="display:flex;"><span>Install upgrade server
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span>sh
+</span></span></code></pre></div><ul>
+<li>For worker nodes need:
+<ul>
+<li>K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server</li>
+<li>K3S_URL is &ldquo;https://<!-- raw HTML omitted -->:6443&rdquo;</li>
+</ul>
+</li>
+</ul>
+<h2 id="setting-up-upgrades">Setting up upgrades</h2>
+<p>Install upgrade server</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>kubectl apply -f https://github.com/rancher/system-upgrade-controller/releases/latest/download/system-upgrade-controller.yaml
 </span></span></code></pre></div><p>Need to label each node with &ldquo;k3s-upgrade=true&rdquo;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl label nodes &lt;your-node-name&gt; &lt;label&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>kubectl label nodes &lt;your-node-name&gt; &lt;label&gt;
 </span></span></code></pre></div><p>Once completed need to add an upgrade <a href="https://raw.githubusercontent.com/rancher/system-upgrade-controller/master/examples/k3s-upgrade.yaml" target="_blank">plan</a>. Edit to suit, and apply.</p>
 
   
@@ -533,6 +548,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
       <nav id="TableOfContents">
   <ul>
     <li><a href="#pre-setup">Pre-Setup</a></li>
+    <li><a href="#setting-up-upgrades">Setting up upgrades</a></li>
   </ul>
 </nav>
     </div>

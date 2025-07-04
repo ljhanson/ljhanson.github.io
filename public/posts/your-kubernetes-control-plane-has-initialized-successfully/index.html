@@ -249,6 +249,12 @@
                 
                         
                 
+                        
+                
+                        
+                
+                        
+                
             
         
         
@@ -266,7 +272,15 @@
                         </li>
                         
                             <li class="bullet">
+                                <a href="http://localhost:1313/posts/k3s-install-notes/">K3s Install Notes</a>
+                            </li>
+                        
+                            <li class="bullet">
                                 <a href="http://localhost:1313/posts/kured-restart-daemon/">Kured - Kubernetes Restart Daemon</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="http://localhost:1313/posts/snippets-in-vscode/">Snippets in VSCode</a>
                             </li>
                         
                             <li class="bullet">
@@ -277,14 +291,6 @@
                                 <a href="http://localhost:1313/posts/cert-manager/">Cert Manager for Kubernetes</a>
                             </li>
                         
-                            <li class="bullet">
-                                <a href="http://localhost:1313/posts/ubuntu-unattended-upgradws/">Ubuntu unattended upgrades</a>
-                            </li>
-                        
-                            <li class="bullet">
-                                <a href="http://localhost:1313/posts/pi_install_-notes/">Pi Install Notes</a>
-                            </li>
-                        
                     
                 
             
@@ -293,6 +299,12 @@
                 
             
                 
+                
+                        
+                
+                        
+                
+                        
                 
                         
                 
@@ -467,21 +479,20 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
   <p>Your Kubernetes control-plane has initialized successfully!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>* Kubeadm init to start the cluster off.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>* Kubeadm init to start the cluster off.
 </span></span></code></pre></div><p>Success:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>To start using your cluster, you need to run the following as a regular user:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#To start using your cluster, you need to run the following as a regular user:</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  mkdir -p $HOME/.kube
 </span></span><span style="display:flex;"><span>  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 </span></span><span style="display:flex;"><span>  sudo chown <span style="color:#66d9ef">$(</span>id -u<span style="color:#66d9ef">)</span>:<span style="color:#66d9ef">$(</span>id -g<span style="color:#66d9ef">)</span> $HOME/.kube/config
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>You should now deploy a pod network to the cluster.
-</span></span><span style="display:flex;"><span>Run <span style="color:#e6db74">&#34;kubectl apply -f [podnetwork].yaml&#34;</span> with one of the options listed at:
-</span></span><span style="display:flex;"><span>  https://kubernetes.io/docs/concepts/cluster-administration/addons/
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Then you can join any number of worker nodes by running the following on each as root:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>kubeadm join 192.168.1.160:6443 --token bt5jqu.92na40x473dukgdb <span style="color:#ae81ff">\
+</span></span></code></pre></div><p>You should now deploy a pod network to the cluster.
+Run &ldquo;kubectl apply -f [podnetwork].yaml&rdquo; with one of the options listed at:
+<a href="https://kubernetes.io/docs/concepts/cluster-administration/addons/" target="_blank">https://kubernetes.io/docs/concepts/cluster-administration/addons/</a></p>
+<p>Then you can join any number of worker nodes by running the following on each as root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubeadm join 192.168.1.160:6443 --token bt5jqu.92na40x473dukgdb <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --discovery-token-ca-cert-hash sha256:2c2962c2f31519a5946064a1bbc0671367d4dd9630715ecfb2c71dfd1d4eed28
 </span></span></code></pre></div><p>Other notes:</p>
 <ul>

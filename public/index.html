@@ -488,9 +488,9 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
         
-        #K3 Install Notes
-Pre-Setup For 8Gb host use external mounts
-ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &#39;--disable&#39; \ &#39;traefik&#39; \ &#39;--disable&#39; \ &#39;servicelb&#39; \ &#39;--disable&#39; \ &#39;metrics-server&#39; \ &#39;--disable&#39; \ &#39;local-storage&#39; \ &#39;--write-kubeconfig-mode 644&#39; \ &#39;--node-label &#34;k3s-upgrade=true&#34;&#39; \ &#39;--flannel-backend=wireguard-native&#39; - For worker nodes need: - K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server - K3S_URL is &#34;https://&lt;server host&gt;:6443&#34; ## Setting up upgrades Install upgrade server ```sh kubectl apply -f https://github.
+        K3 Install Notes Pre-Setup For 8Gb host use external mounts
+ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &#39;--disable&#39; \ &#39;traefik&#39; \ &#39;--disable&#39; \ &#39;servicelb&#39; \ &#39;--disable&#39; \ &#39;metrics-server&#39; \ &#39;--disable&#39; \ &#39;local-storage&#39; \ &#39;--write-kubeconfig-mode 644&#39; \ &#39;--node-label &#34;k3s-upgrade=true&#34;&#39; \ &#39;--flannel-backend=wireguard-native&#39; For worker nodes need: K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server K3S_URL is &ldquo;https://:6443&rdquo; Setting up upgrades Install upgrade server
+kubectl apply -f https://github.
         
         <div class="read-more-link">
             <a href="/posts/k3s-install-notes/">Read More…</a>
@@ -762,7 +762,7 @@ ClusterIssuer.yaml file sets up the connection to the CA (Let&rsquo;s Encrypt) i
     <article class="post">
         <div class="info">
   <h1 class="post-title">
-    <a href="http://localhost:1313/posts/pi_install_-notes/">Pi Install Notes</a>
+    <a href="http://localhost:1313/posts/pi_install_notes/">Pi Install Notes</a>
   </h1>
 
   <div class="headline">
@@ -817,12 +817,8 @@ ClusterIssuer.yaml file sets up the connection to the CA (Let&rsquo;s Encrypt) i
 </div>
 
         
-        #Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &rsquo;s/#?DNSStubListener=yes/DNSStubListener=no/g&rsquo; /etc/systemd/resolved.conf Add hostname to /etc/hosts curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https
-Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53
-        
-        <div class="read-more-link">
-            <a href="/posts/pi_install_-notes/">Read More…</a>
-        </div>
+        Inital Install sudo apt update sudo apt upgrade sudo apt install avahi-daemon docker.io docker-compose sudo dpkg-reconfigure tzdata sudo adduser ljhanson sudo usermod -G docker, sudo sudo hostnamectl set-hostname pi sudo sed -r -i.orig &#39;s/#?DNSStubListener=yes/DNSStubListener=no/g&#39; /etc/systemd/resolved.conf Add hostname to /etc/hosts
+curl -L https://install.pivpn.io | bash sudo ufw allow ssh sudo ufw allow http sudo ufw allow https Next two needed to keep DNS/DHCP on internal network only if using ipv6 tunnel sudo ufw allow in on eth0 to any port 67 sudo ufw allow in on eth0 to any port 53 # Default policy sudo ufw default deny incoming sudo ufw default allow outgoing sudo ufw enable 
         
         
     </article>

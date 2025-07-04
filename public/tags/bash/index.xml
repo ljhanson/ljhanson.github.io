@@ -6,8 +6,15 @@
     <description>Recent content in Bash on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Idrac Notes</title>
+      <link>http://localhost:1313/posts/idrac-notes/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/idrac-notes/</guid>
+      <description>How to restart/power off from idrac terminal&#xA;# power server off racadm serveraction powerdown # power server on racadm serveraction powerup # perform server power cycle racadm serveraction powercycle # force hard server power reset racadm serveraction hardreset </description>
+    </item>
     <item>
       <title>Bash helper functions for venv</title>
       <link>http://localhost:1313/posts/bash-venv-functions/</link>

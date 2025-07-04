@@ -6,8 +6,15 @@
     <description>Recent content in Kubernetes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jan 2023 11:34:03 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K3s Install Notes</title>
+      <link>http://localhost:1313/posts/k3s-install-notes/</link>
+      <pubDate>Sat, 07 Jan 2023 11:34:03 -0500</pubDate>
+      <guid>http://localhost:1313/posts/k3s-install-notes/</guid>
+      <description>K3 Install Notes Pre-Setup For 8Gb host use external mounts&#xA;ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &amp;#39;--disable&amp;#39; \ &amp;#39;traefik&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;servicelb&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;metrics-server&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;local-storage&amp;#39; \ &amp;#39;--write-kubeconfig-mode 644&amp;#39; \ &amp;#39;--node-label &amp;#34;k3s-upgrade=true&amp;#34;&amp;#39; \ &amp;#39;--flannel-backend=wireguard-native&amp;#39; For worker nodes need: K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server K3S_URL is &amp;ldquo;https://:6443&amp;rdquo; Setting up upgrades Install upgrade server&#xA;kubectl apply -f https://github.</description>
+    </item>
     <item>
       <title>Kured - Kubernetes Restart Daemon</title>
       <link>http://localhost:1313/posts/kured-restart-daemon/</link>
@@ -27,7 +34,7 @@
       <link>http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/</guid>
-      <description>Your Kubernetes control-plane has initialized successfully!&#xA;* Kubeadm init to start the cluster off. Success:&#xA;To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &amp;#34;kubectl apply -f [podnetwork].yaml&amp;#34; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/ Then you can join any number of worker nodes by running the following on each as root: kubeadm join 192.</description>
+      <description>Your Kubernetes control-plane has initialized successfully!&#xA;* Kubeadm init to start the cluster off. Success:&#xA;#To start using your cluster, you need to run the following as a regular user: mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config sudo chown $(id -u):$(id -g) $HOME/.kube/config You should now deploy a pod network to the cluster. Run &amp;ldquo;kubectl apply -f [podnetwork].yaml&amp;rdquo; with one of the options listed at: https://kubernetes.io/docs/concepts/cluster-administration/addons/&#xA;Then you can join any number of worker nodes by running the following on each as root:</description>
     </item>
   </channel>
 </rss>

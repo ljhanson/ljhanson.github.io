@@ -49,14 +49,18 @@
 
 
 
+  
+  
+  
+
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name"></title>
-<meta property="og:title" content=ZgotmplZ />
-<meta name="twitter:title" content=ZgotmplZ />
-<meta itemprop="name" content=ZgotmplZ />
-<meta name="application-name" content=ZgotmplZ />
+<title itemprop="name">Open Authority - Pi Install Notes</title>
+<meta property="og:title" content=Open&#32;Authority&#32;-&#32;Pi&#32;Install&#32;Notes />
+<meta name="twitter:title" content=Open&#32;Authority&#32;-&#32;Pi&#32;Install&#32;Notes />
+<meta itemprop="name" content=Open&#32;Authority&#32;-&#32;Pi&#32;Install&#32;Notes />
+<meta name="application-name" content=Open&#32;Authority&#32;-&#32;Pi&#32;Install&#32;Notes />
 <meta property="og:site_name" content="" />
 
 
@@ -66,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="http://localhost:1313/tags/git/" />
-<link rel="canonical" href="http://localhost:1313/tags/git/" itemprop="url" />
-<meta name="url" content="http://localhost:1313/tags/git/" />
-<meta name="twitter:url" content="http://localhost:1313/tags/git/" />
-<meta property="og:url" content="http://localhost:1313/tags/git/" />
+<base href="http://localhost:1313/posts/pi_install_notes/" />
+<link rel="canonical" href="http://localhost:1313/posts/pi_install_notes/" itemprop="url" />
+<meta name="url" content="http://localhost:1313/posts/pi_install_notes/" />
+<meta name="twitter:url" content="http://localhost:1313/posts/pi_install_notes/" />
+<meta property="og:url" content="http://localhost:1313/posts/pi_install_notes/" />
 
 
-<meta property="og:updated_time" content="2019-05-27T00:00:00Z" />
+<meta property="og:updated_time" content="2020-12-07T00:00:00Z" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='http://localhost:1313/sitemap.xml' />
-<link href="http://localhost:1313/tags/git/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -422,25 +425,118 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Git</h1>
-<ul class="entries">
-    
-        <h3 style="text-align: center;">2019</h3>
-        
-            <li>
-                <span class="title">
-                    <a href="/posts/gitea-in-a-jail/">Gitea in a FreeBSD jail</a>
-                </span>
-                <span class="published">
-                    <time class="pull-right post-list">May 27, 2019</time>
-                </span>
-            </li>
-        
-    
-</ul>
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/pi_install_notes/">Pi Install Notes</a>
+  </h1>
 
+  <div class="headline">
+    <div>
+      
+        
+          <span>L.J. Hanson - </span>
+        
+      
+      
+      <time datetime=" 2020-12-07T00:00:00Z" class="post-date">
+        December 7, 2020
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+    <ul class="tags">
+      
+      <li class="tag-pi">
+        <a href="http://localhost:1313/tags/pi">pi</a>
+      </li>
+      
+      <li class="tag-install">
+        <a href="http://localhost:1313/tags/install">install</a>
+      </li>
+      
+      <li class="tag-vpn">
+        <a href="http://localhost:1313/tags/vpn">vpn</a>
+      </li>
+      
+      <li class="tag-pihole">
+        <a href="http://localhost:1313/tags/pihole">pihole</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <h1 id="inital-install">Inital Install</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt upgrade
+</span></span><span style="display:flex;"><span>sudo apt install avahi-daemon docker.io docker-compose
+</span></span><span style="display:flex;"><span>sudo dpkg-reconfigure tzdata
+</span></span><span style="display:flex;"><span>sudo adduser ljhanson
+</span></span><span style="display:flex;"><span>sudo usermod -G docker, sudo
+</span></span><span style="display:flex;"><span>sudo hostnamectl set-hostname pi
+</span></span><span style="display:flex;"><span>sudo sed -r -i.orig <span style="color:#e6db74">&#39;s/#?DNSStubListener=yes/DNSStubListener=no/g&#39;</span> /etc/systemd/resolved.conf
+</span></span></code></pre></div><p>Add hostname to /etc/hosts</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -L https://install.pivpn.io | bash
+</span></span><span style="display:flex;"><span>sudo ufw allow ssh
+</span></span><span style="display:flex;"><span>sudo ufw allow http
+</span></span><span style="display:flex;"><span>sudo ufw allow https
+</span></span></code></pre></div><h1 id="next-two-needed-to-keep-dnsdhcp-on-internal-network-only-if-using-ipv6">Next two needed to keep DNS/DHCP on internal network only if using ipv6</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tunnel
+</span></span><span style="display:flex;"><span>sudo ufw allow in on eth0 to any port <span style="color:#ae81ff">67</span>
+</span></span><span style="display:flex;"><span>sudo ufw allow in on eth0 to any port <span style="color:#ae81ff">53</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default policy</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo ufw default deny incoming
+</span></span><span style="display:flex;"><span>sudo ufw default allow outgoing
+</span></span><span style="display:flex;"><span>sudo ufw enable
+</span></span></code></pre></div>
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="http://localhost:1313/posts/splunk-notes/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Splunk Notes</a>
+        
+	    
+            <div class="next-post">
+                <a href="http://localhost:1313/posts/ubuntu-unattended-upgradws/?ref=footer"><span style="font-weight:bold;">Next »</span><br>Ubuntu unattended upgrades</a>
+            </div>
+        
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>
