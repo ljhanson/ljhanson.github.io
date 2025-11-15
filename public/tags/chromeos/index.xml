@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChromeOS on </title>
+    <link>https://blog.openauthority.net/tags/chromeos/</link>
+    <description>Recent content in ChromeOS on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.openauthority.net/tags/chromeos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powerline fonts in ChromeOS ssh client</title>
+      <link>https://blog.openauthority.net/posts/powerline-fonts-in-chromeos-ssh-client/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://blog.openauthority.net/posts/powerline-fonts-in-chromeos-ssh-client/</guid>
+      <description>For folks using powerline status bar, the correct font is important to ensure that powerline displays properly. The custom CSS file located here can be placed in the user ssh box of the ChromeOS ssh client.&#xA;Originally from github/wernight</description>
+    </item>
+  </channel>
+</rss>

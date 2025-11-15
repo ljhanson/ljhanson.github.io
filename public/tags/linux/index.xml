@@ -36,5 +36,12 @@
       <guid>https://blog.openauthority.net/posts/idrac-notes/</guid>
       <description>How to restart/power off from idrac terminal&#xA;# power server off racadm serveraction powerdown # power server on racadm serveraction powerup # perform server power cycle racadm serveraction powercycle # force hard server power reset racadm serveraction hardreset </description>
     </item>
+    <item>
+      <title>Powerline fonts in ChromeOS ssh client</title>
+      <link>https://blog.openauthority.net/posts/powerline-fonts-in-chromeos-ssh-client/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://blog.openauthority.net/posts/powerline-fonts-in-chromeos-ssh-client/</guid>
+      <description>For folks using powerline status bar, the correct font is important to ensure that powerline displays properly. The custom CSS file located here can be placed in the user ssh box of the ChromeOS ssh client.&#xA;Originally from github/wernight</description>
+    </item>
   </channel>
 </rss>
