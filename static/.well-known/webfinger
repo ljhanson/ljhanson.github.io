@@ -1,0 +1,13 @@
+{
+  "subject": "acct:ljhanson@hachyderm.io",
+  "aliases": [
+    "https://hachyderm.io/@ljhanson"
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://hachyderm.io/users/ljhanson"
+    }
+  ]
+}
