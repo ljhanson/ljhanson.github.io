@@ -93,6 +93,13 @@
       <description></description>
     </item>
     <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Arm</title>
       <link>http://localhost:1313/tags/arm/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
@@ -153,13 +160,6 @@
       <link>http://localhost:1313/tags/jails/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/jails/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>

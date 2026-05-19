@@ -6,8 +6,15 @@
     <description>Recent content in Python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Nov 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Splunk Notes</title>
+      <link>http://localhost:1313/posts/splunk-notes/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/splunk-notes/</guid>
+      <description>Splunk Components Indexer - Process, stores and creates events. Does this via time stamped directories. Search Head - Front End, consolidate and enrich results Forwarder - Agent that sends data to indexer These three represent the minimal install of splunk. Deployment Server Cluster Master License Master Roles Admin Can install apps, and create knowledge objects Power Can create and share knowledge objects for app users and do realtime searches. User Will only see own knowledge objects and those shared with them.</description>
+    </item>
     <item>
       <title>Bash helper functions for venv</title>
       <link>http://localhost:1313/posts/bash-venv-functions/</link>

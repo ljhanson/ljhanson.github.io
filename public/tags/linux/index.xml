@@ -23,6 +23,13 @@
       <description>Unattended upgrades for Ubuntu</description>
     </item>
     <item>
+      <title>Splunk Notes</title>
+      <link>http://localhost:1313/posts/splunk-notes/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/splunk-notes/</guid>
+      <description>Splunk Components Indexer - Process, stores and creates events. Does this via time stamped directories. Search Head - Front End, consolidate and enrich results Forwarder - Agent that sends data to indexer These three represent the minimal install of splunk. Deployment Server Cluster Master License Master Roles Admin Can install apps, and create knowledge objects Power Can create and share knowledge objects for app users and do realtime searches. User Will only see own knowledge objects and those shared with them.</description>
+    </item>
+    <item>
       <title>Kubernetes Notes</title>
       <link>http://localhost:1313/posts/your-kubernetes-control-plane-has-initialized-successfully/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>

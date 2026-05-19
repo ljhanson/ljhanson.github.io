@@ -16,6 +16,13 @@
       <description>K3 Install Notes Pre-Setup For 8Gb host use external mounts&#xA;ln -s /datadrive/k3s/ /run/k3s ln -s /datadrive/k3s-pods/ /var/lib/kubelet/pods ln -s /datadrive/k3s-rancher/ /var/lib/rancher ## Install ```sh &amp;#39;--disable&amp;#39; \ &amp;#39;traefik&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;servicelb&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;metrics-server&amp;#39; \ &amp;#39;--disable&amp;#39; \ &amp;#39;local-storage&amp;#39; \ &amp;#39;--write-kubeconfig-mode 644&amp;#39; \ &amp;#39;--node-label &amp;#34;k3s-upgrade=true&amp;#34;&amp;#39; \ &amp;#39;--flannel-backend=wireguard-native&amp;#39; For worker nodes need: K3S_TOKEN is at /var/lib/rancher/k3s/server/node-token on server K3S_URL is &amp;ldquo;https://:6443&amp;rdquo; Setting up upgrades Install upgrade server&#xA;kubectl apply -f https://github.</description>
     </item>
     <item>
+      <title>Splunk Notes</title>
+      <link>http://localhost:1313/posts/splunk-notes/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/splunk-notes/</guid>
+      <description>Splunk Components Indexer - Process, stores and creates events. Does this via time stamped directories. Search Head - Front End, consolidate and enrich results Forwarder - Agent that sends data to indexer These three represent the minimal install of splunk. Deployment Server Cluster Master License Master Roles Admin Can install apps, and create knowledge objects Power Can create and share knowledge objects for app users and do realtime searches. User Will only see own knowledge objects and those shared with them.</description>
+    </item>
+    <item>
       <title>ARM SBC Notes</title>
       <link>http://localhost:1313/posts/arm-sbc-notes/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>

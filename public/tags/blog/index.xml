@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/posts/snippets-in-vscode/</guid>
       <description>You can create snippets to add content to files in VSCode to put in boilerplate. In this example I&amp;rsquo;m using a snippet to create the frontmatter for a blogpost.&#xA;{ &amp;#34;Markdown FrontMatter&amp;#34;: { &amp;#34;prefix&amp;#34;: &amp;#34;eventFrontMatter&amp;#34;, &amp;#34;body&amp;#34;: [ &amp;#34;---&amp;#34;, &amp;#34;title: $1&amp;#34;, &amp;#34;date: $2&amp;#34;, &amp;#34;author: L.J. Hanson&amp;#34;, &amp;#34;tags: [$3]&amp;#34;, &amp;#34;slug: $4&amp;#34;, &amp;#34;description: $5&amp;#34;, &amp;#34;draft: true&amp;#34;, &amp;#34;---&amp;#34;, &amp;#34;&amp;#34; ], &amp;#34;description&amp;#34;: &amp;#34;Markdown FrontMatter&amp;#34; } } </description>
     </item>
+    <item>
+      <title>Splunk Notes</title>
+      <link>http://localhost:1313/posts/splunk-notes/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/splunk-notes/</guid>
+      <description>Splunk Components Indexer - Process, stores and creates events. Does this via time stamped directories. Search Head - Front End, consolidate and enrich results Forwarder - Agent that sends data to indexer These three represent the minimal install of splunk. Deployment Server Cluster Master License Master Roles Admin Can install apps, and create knowledge objects Power Can create and share knowledge objects for app users and do realtime searches. User Will only see own knowledge objects and those shared with them.</description>
+    </item>
   </channel>
 </rss>
